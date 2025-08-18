@@ -1,189 +1,127 @@
 ---
-layout: archive
+layout: single
 title: "Research Progress"
 permalink: /progress/
 author_profile: true
 ---
 
-## PhD Timeline Overview
+<style>
+:root {
+  --brand: #2b6cb0;
+  --brand-accent: #3182ce;
+  --surface: #ffffff;
+  --text: #1a202c;
+  --muted: #4a5568;
+  --bg: #f7fafc;
+}
 
-**Start Date**: August 2023  
-**Expected Completion**: July 2026  
-**Current Status**: Year 1, Semester 2
+.progress-wrap {
+  display: grid;
+  gap: 2rem;
+}
 
----
+.progress-hero {
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+  color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+}
+.progress-hero h1 { margin: 0 0 .5rem 0; }
+.progress-hero p { margin: 0; opacity: .95; }
 
-## Completed Milestones
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.project-card {
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+  border: 1px solid rgba(0,0,0,.06);
+  overflow: hidden;
+  display: grid;
+}
+.project-card header { padding: 1rem 1rem .5rem; border-bottom: 1px solid #edf2f7; }
+.project-card header h3 { margin: 0; color: var(--text); }
+.project-card header .badge { display: inline-block; margin-top: .5rem; padding: .15rem .5rem; font-size: .75rem; border-radius: .5rem; background: #ebf8ff; color: #2a4365; }
+.project-card .body { padding: 1rem; color: var(--muted); }
+.project-card .meta { padding: 0 1rem 1rem; font-size: .875rem; color: var(--muted); }
+.project-card .progress {
+  height: 8px; background: #edf2f7; border-radius: 4px; margin: 0 1rem 1rem;
+}
+.project-card .progress > span { display: block; height: 100%; background: linear-gradient(90deg, var(--brand), var(--brand-accent)); border-radius: 4px; width: var(--value, 0%); }
 
-### ✅ Coursework Phase (August 2023 - May 2024)
+.milestones {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #edf2f7;
+}
+.milestones ul { margin: 0; padding-left: 1.25rem; }
+.milestones li { margin: .35rem 0; }
 
-#### Semester 1 (August - December 2023)
-- **Research Methodology in Business** - Grade: A
-- **Advanced Statistics for Business Research** - Grade: A-
-- **Financial Theory and Corporate Finance** - Grade: A
-- **Quantitative Methods in Finance** - Grade: A
+@media (max-width: 640px) {
+  .progress-hero { padding: 1.25rem; border-radius: 10px; }
+}
+</style>
 
-#### Semester 2 (January - May 2024)
-- **Real Estate Economics and Finance** - Grade: A
-- **Investment Analysis and Portfolio Theory** - Grade: A-
-- **Econometrics for Finance Research** - Grade: A
-- **Behavioral Finance** - Grade: A-
+<div class="progress-wrap">
+  <section class="progress-hero">
+    <h1>Research Progress</h1>
+    <p>Tracking key milestones and ongoing projects across REITs &amp; InvITs in India (Bengaluru focus).</p>
+  </section>
 
-**Overall CGPA**: 3.8/4.0
+  <section>
+    <h2>Featured Research Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <header>
+          <h3>Indian REIT Performance Analytics</h3>
+          <span class="badge">In Progress</span>
+        </header>
+        <div class="body">Risk-adjusted returns, volatility clustering, and macro sensitivity analysis for listed Indian REITs (2019–present).</div>
+        <div class="meta">Methods: Time-series econometrics, GARCH, Fama–French style factor models</div>
+        <div class="progress"><span style="--value: 65%"></span></div>
+      </article>
 
-### ✅ Research Proposal Development (September 2023 - February 2024)
+      <article class="project-card">
+        <header>
+          <h3>InvIT Yield and Cash Flow Dynamics</h3>
+          <span class="badge" style="background:#f0fff4;color:#22543d;">Data</span>
+        </header>
+        <div class="body">Distribution sustainability, sectoral risk profiles, and interest rate channel across transport and energy InvITs.</div>
+        <div class="meta">Methods: Panel regression, regime-switching models</div>
+        <div class="progress"><span style="--value: 45%"></span></div>
+      </article>
 
-- **Literature Review**: Comprehensive review of 150+ research papers on REITs, InvITs, and real estate investment
-- **Research Gap Identification**: Identified specific gaps in Indian REIT/InvIT research
-- **Methodology Framework**: Developed mixed-methods approach combining quantitative and qualitative analysis
-- **Proposal Defense**: Successfully defended research proposal in February 2024
+      <article class="project-card">
+        <header>
+          <h3>Bengaluru Commercial Real Estate Pulse</h3>
+          <span class="badge" style="background:#fff5f5;color:#742a2a;">Field</span>
+        </header>
+        <div class="body">Tenant mix, absorption trends, and rental resilience in Bengaluru’s Grade-A office submarkets.</div>
+        <div class="meta">Methods: Case studies, expert interviews, spatial analysis</div>
+        <div class="progress"><span style="--value: 55%"></span></div>
+      </article>
+    </div>
+  </section>
 
-### ✅ Ethics Approval and Data Access (March 2024)
+  <section class="milestones">
+    <h2>Recent Milestones</h2>
+    <ul>
+      <li>Q1 2024: Proposal defense completed; IRB approval granted.</li>
+      <li>Q2 2024: Secondary datasets harmonized; preliminary models validated.</li>
+      <li>Q3 2024: Investor survey launched; 40% responses collected.</li>
+    </ul>
+  </section>
 
-- **IRB Approval**: Obtained Institutional Review Board approval for primary data collection
-- **Data Partnerships**: Established partnerships with:
-  - National Stock Exchange (NSE) for REIT/InvIT trading data
-  - Knight Frank India for real estate market data
-  - CRISIL for credit ratings and research reports
-
----
-
-## Current Activities (March - June 2024)
-
-### 🔄 Data Collection Phase
-
-#### Secondary Data Collection (80% Complete)
-- **REIT Performance Data**: Collected daily price, volume, and dividend data for all listed Indian REITs (2019-2024)
-- **InvIT Performance Data**: Gathered performance metrics for all listed Indian InvITs
-- **Market Benchmarks**: Compiled comparative data from Nifty Realty Index, Nifty 50, and international REIT indices
-- **Bengaluru Market Data**: Assembled commercial real estate data specific to Bengaluru region
-
-#### Primary Data Collection (40% Complete)
-- **Investor Survey**: Designed and launched online survey targeting REIT/InvIT investors
-  - Target Sample: 500 respondents
-  - Current Responses: 198
-  - Response Rate: 39.6%
-- **Expert Interviews**: Conducting in-depth interviews with industry experts
-  - Completed: 8 interviews
-  - Scheduled: 4 interviews
-  - Target: 15 interviews
-
-### 🔄 Preliminary Analysis
-
-#### Quantitative Analysis (60% Complete)
-- **Performance Metrics**: Calculated risk-adjusted returns, Sharpe ratios, and volatility measures
-- **Correlation Analysis**: Examined relationships between REITs, InvITs, and other asset classes
-- **Regression Models**: Developed preliminary models for REIT performance drivers
-
-#### Qualitative Analysis (30% Complete)
-- **Interview Transcription**: Completed transcription of 6 expert interviews
-- **Thematic Analysis**: Identified preliminary themes from interview data
-- **Case Study Development**: Initiated detailed case studies of 3 major Indian REITs
-
----
-
-## Upcoming Milestones (July - December 2024)
-
-### 📅 July - August 2024
-- **Complete Primary Data Collection**: Achieve target sample size for investor survey
-- **Finish Expert Interviews**: Complete remaining 7 expert interviews
-- **Advanced Statistical Analysis**: Conduct sophisticated econometric analysis
-
-### 📅 September - October 2024
-- **First Draft of Chapters 1-3**: Complete literature review, methodology, and preliminary findings
-- **Conference Presentations**: Present findings at 2 national conferences
-- **Publication Submissions**: Submit first research paper to peer-reviewed journal
-
-### 📅 November - December 2024
-- **Mid-term Review**: Comprehensive review with supervisory committee
-- **Refine Research Focus**: Based on preliminary findings, refine research questions
-- **International Conference**: Present at international real estate research conference
-
----
-
-## Research Output Progress
-
-### Publications Pipeline
-
-#### Submitted/Under Review
-1. **"Performance Analysis of Indian REITs: A Comparative Study"** - *Journal of Real Estate Research* (Under Review)
-
-#### In Preparation
-2. **"Investor Behavior in Indian REIT Market"** - Target: *Real Estate Economics* (Draft 60% complete)
-3. **"Bengaluru Real Estate Investment Landscape"** - Target: *International Real Estate Review* (Draft 30% complete)
-
-### Conference Presentations
-- **Completed**: 2 national conferences
-- **Scheduled**: 1 international conference (December 2024)
-- **Planned**: 2 additional conferences (2025)
-
----
-
-## Challenges and Solutions
-
-### Challenges Encountered
-1. **Data Availability**: Limited historical data for Indian REITs (market started in 2019)
-   - **Solution**: Supplemented with international comparative data and proxy measures
-
-2. **Survey Response Rate**: Lower than expected response rate for investor survey
-   - **Solution**: Extended survey period, added incentives, partnered with investment platforms
-
-3. **COVID-19 Impact**: Some real estate data affected by pandemic-related disruptions
-   - **Solution**: Incorporated pandemic impact as a separate analysis dimension
-
-### Lessons Learned
-- Importance of building strong industry relationships early
-- Need for flexible research design to accommodate data limitations
-- Value of mixed-methods approach in emerging market research
-
----
-
-## Skills Development
-
-### Technical Skills Acquired
-- **Statistical Software**: Advanced proficiency in R, STATA, and Python
-- **Database Management**: SQL for large dataset handling
-- **Qualitative Analysis**: NVivo for interview and survey data analysis
-
-### Professional Development
-- **Research Writing**: Improved academic writing through workshops and practice
-- **Presentation Skills**: Enhanced through conference presentations and teaching
-- **Networking**: Built relationships with industry professionals and academics
-
----
-
-## Resource Utilization
-
-### Funding and Grants
-- **University Fellowship**: ₹25,000/month stipend
-- **Research Grant**: ₹2,00,000 for data collection and conference participation
-- **Travel Grant**: ₹50,000 for international conference attendance
-
-### Infrastructure Access
-- **Bloomberg Terminal**: Access through Alliance University library
-- **Research Databases**: Subscription to major financial and real estate databases
-- **Computing Resources**: High-performance computing cluster for large-scale analysis
-
----
-
-## Next Quarter Goals (July - September 2024)
-
-1. **Complete Data Collection**: Achieve 100% completion of primary data collection
-2. **Advanced Analysis**: Conduct sophisticated econometric modeling
-3. **First Publication**: Submit first research paper to top-tier journal
-4. **Industry Engagement**: Strengthen partnerships with real estate companies
-5. **International Exposure**: Prepare for international conference presentation
-
----
-
-## Long-term Vision
-
-### Academic Goals
-- **Thesis Completion**: High-quality dissertation contributing to REIT/InvIT literature
-- **Publication Record**: 4-5 peer-reviewed publications by graduation
-- **Academic Career**: Pursue post-doctoral research or faculty position
-
-### Industry Impact
-- **Policy Influence**: Contribute to regulatory discussions on REIT/InvIT development
-- **Industry Insights**: Provide actionable research for real estate investment decisions
-- **Market Development**: Support growth of Indian REIT/InvIT market through research
+  <section>
+    <h2>What’s Next</h2>
+    <ul>
+      <li>Complete primary data collection and finalize interview coding.</li>
+      <li>Submit first manuscript on Indian REIT performance drivers.</li>
+      <li>Prepare conference presentation on Bengaluru CRE dynamics.</li>
+    </ul>
+  </section>
+</div>
