@@ -24,9 +24,8 @@ My doctoral research investigates:
 2. **Customize** the content in `_config.yml` and page files
 3. **Enable GitHub Pages** in repository settings:
    - Go to **Settings → Pages**
-   - Set **Source**: Deploy from a branch
-   - Select **Branch**: `main` and `/ (root)`
-4. **Access** your site at `https://[username].github.io/[repository-name]/`
+   - Set **Build and deployment**: GitHub Actions
+4. **Access** your site at `https://sankabira.github.io/sandeep-research-portfolio/`
 
 ### For Local Development
 

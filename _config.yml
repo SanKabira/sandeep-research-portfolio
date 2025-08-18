@@ -1,8 +1,8 @@
 
 title: "Sandeep S — Research Portfolio"
 description: "PhD Research on REITs & InvITs in India | Real Estate Investment Analysis | Bengaluru Market Focus"
-url: "" # set your custom domain if any
-baseurl: ""
+url: "https://sankabira.github.io" # set your custom domain if any
+baseurl: "/sandeep-research-portfolio"
 
 # Build settings
 markdown: kramdown
@@ -15,6 +15,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
 
 author:
   name: "Sandeep S"
