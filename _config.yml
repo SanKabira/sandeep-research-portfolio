@@ -1,0 +1,37 @@
+
+title: "Sandeep S — Research Portfolio"
+description: "REITs & InvITs in India — Bengaluru Focus"
+url: "" # set your custom domain if any
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Use the academicpages theme
+remote_theme: "academicpages/academicpages"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+author:
+  name: "Sandeep S"
+  avatar: "/assets/img/profile.jpg"
+  email: "ssandeepPHD724@bus.alliance.edu.in"
+  affiliations:
+    - name: "Research Scholar, Alliance School of Business, Alliance University, Bengaluru"
+
+google_analytics: ""
+
+# Collections (keep minimal for now)
+collections:
+  teaching:
+    output: true
+  posts:
+    output: true
+  publications:
+    output: true
+
+# Navigation (loaded from _data/navigation.yml)
