@@ -9,7 +9,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Use the academicpages theme
-remote_theme: "academicpages/academicpages"
+remote_theme: "academicpages/academicpages.github.io"
 
 plugins:
   - jekyll-remote-theme
