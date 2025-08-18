@@ -12,7 +12,7 @@ highlighter: rouge
 repository: "SanKabira/sandeep-research-portfolio"
 
 # Use the academicpages theme
-remote_theme: "academicpages/academicpages.github.io"
+remote_theme: "academicpages/academicpages.github.io@main"
 
 plugins:
   - jekyll-remote-theme
