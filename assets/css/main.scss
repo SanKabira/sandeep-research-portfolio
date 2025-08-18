@@ -4,8 +4,7 @@
 
 @charset "utf-8";
 
-// Import the academicpages theme
-@import "academicpages";
+// Theme import removed to avoid build failure when the partial is unavailable
 
 // Custom styles for enhanced academic portfolio
 .page__hero {
