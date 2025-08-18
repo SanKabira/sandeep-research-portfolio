@@ -1,6 +1,6 @@
 
 title: "Sandeep S — Research Portfolio"
-description: "REITs & InvITs in India — Bengaluru Focus"
+description: "PhD Research on REITs & InvITs in India | Real Estate Investment Analysis | Bengaluru Market Focus"
 url: "" # set your custom domain if any
 baseurl: ""
 
@@ -19,19 +19,98 @@ plugins:
 author:
   name: "Sandeep S"
   avatar: "/assets/img/profile.jpg"
+  bio: "PhD Scholar researching REITs & InvITs in India"
+  location: "Bengaluru, India"
   email: "ssandeepPHD724@bus.alliance.edu.in"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ssandeepPHD724@bus.alliance.edu.in"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/sandeep-s-reit-research"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=XXXXXXX"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Sandeep-S-XX"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/SandeepREITResearch"
   affiliations:
     - name: "Research Scholar, Alliance School of Business, Alliance University, Bengaluru"
+    - name: "Specialization: Real Estate Investment Trusts (REITs) & Infrastructure Investment Trusts (InvITs)"
 
-google_analytics: ""
+# SEO settings
+google_site_verification: ""
+bing_site_verification: ""
+alexa_site_verification: ""
+yandex_site_verification: ""
+naver_site_verification: ""
+
+# Social sharing
+twitter:
+  username: "SandeepREITResearch"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: ""
+    anonymize_ip: false
 
 # Collections (keep minimal for now)
 collections:
+  pages:
+    output: true
+    permalink: /:path/
   teaching:
     output: true
+    permalink: /:collection/:name/
   posts:
     output: true
+    permalink: /:categories/:title/
   publications:
     output: true
+    permalink: /:collection/:name/
 
-# Navigation (loaded from _data/navigation.yml)
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
