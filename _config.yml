@@ -8,6 +8,9 @@ baseurl: "/sandeep-research-portfolio"
 markdown: kramdown
 highlighter: rouge
 
+# GitHub metadata
+repository: "SanKabira/sandeep-research-portfolio"
+
 # Use the academicpages theme
 remote_theme: "academicpages/academicpages"
 
