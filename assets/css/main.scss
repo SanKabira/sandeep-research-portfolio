@@ -30,45 +30,7 @@
         "vendor/font-awesome/solid",
         "vendor/font-awesome/brands";
 
-// Sitewide background image and overlay
-html, body { height: 100%; }
-body {
-  background: url('https://cdn.cosmos.so/6c9716db-90d6-49a9-9910-615c772b955f?format=jpeg') no-repeat center center fixed;
-  background-size: cover;
-  position: relative; // create stacking context for overlay and content
-}
-
-// Override theme defaults that paint solid backgrounds
-html, body {
-  background-color: transparent !important;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.65);
-  -webkit-backdrop-filter: blur(3px) brightness(0.85);
-  backdrop-filter: blur(3px) brightness(0.85);
-  z-index: 0; // above body background
-  pointer-events: none;
-}
-
-// Ensure page wrappers are above overlay and transparent to reveal bg
-.masthead,
-.page,
-.page__inner,
-.page__content,
-.page__footer,
-.sidebar,
-.initial-content {
-  position: relative;
-  z-index: 1;
-  background: transparent !important;
-}
+// Removed custom background/overlay; use theme defaults
 
 // Custom styles for enhanced academic portfolio
 .page__hero {
