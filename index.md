@@ -83,17 +83,17 @@ My doctoral research investigates the performance characteristics, market dynami
 
 ## Quick Links
 
-📊 **[Research](/research/)** - Detailed overview of my PhD research on REITs and InvITs
+📊 **[Research]({{ '/research/' | relative_url }})** - Detailed overview of my PhD research on REITs and InvITs
 
-📝 **[Publications](/publications/)** - Academic papers, conference presentations, and working papers
+📝 **[Publications]({{ '/publications/' | relative_url }})** - Academic papers, conference presentations, and working papers
 
-🎓 **[Teaching](/teaching/)** - Courses taught, student mentoring, and educational contributions
+🎓 **[Teaching]({{ '/teaching/' | relative_url }})** - Courses taught, student mentoring, and educational contributions
 
-📈 **[Progress](/progress/)** - Real-time updates on research milestones and achievements
+📈 **[Progress]({{ '/progress/' | relative_url }})** - Real-time updates on research milestones and achievements
 
-📄 **[CV](/cv/)** - Comprehensive curriculum vitae and professional background
+📄 **[CV]({{ '/cv/' | relative_url }})** - Comprehensive curriculum vitae and professional background
 
-📧 **[Contact](/contact/)** - Get in touch for collaborations and academic discussions
+📧 **[Contact]({{ '/contact/' | relative_url }})** - Get in touch for collaborations and academic discussions
 
 ---
 
