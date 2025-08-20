@@ -4,7 +4,31 @@
 
 @charset "utf-8";
 
-// Theme import removed to avoid build failure when the partial is unavailable
+// Import vendored AcademicPages SCSS stack
+@import "vendor/breakpoint/breakpoint",
+        "themes",
+        "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+        "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+        "include/mixins",
+        "vendor/susy/susy",
+        "layout/reset",
+        "layout/base",
+        "include/utilities",
+        "layout/tables",
+        "layout/buttons",
+        "layout/notices",
+        "layout/masthead",
+        "layout/navigation",
+        "layout/footer",
+        "syntax",
+        "layout/forms",
+        "layout/page",
+        "layout/archive",
+        "layout/sidebar",
+        "layout/json_cv",
+        "vendor/font-awesome/fontawesome",
+        "vendor/font-awesome/solid",
+        "vendor/font-awesome/brands";
 
 // Custom styles for enhanced academic portfolio
 .page__hero {

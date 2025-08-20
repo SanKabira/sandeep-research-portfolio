@@ -11,8 +11,7 @@ highlighter: rouge
 # GitHub metadata
 repository: "SanKabira/sandeep-research-portfolio"
 
-# Use a maintained remote theme (Minimal Mistakes)
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# Using vendored AcademicPages theme locally (no remote_theme)
 
 plugins:
   - jekyll-remote-theme
