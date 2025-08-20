@@ -58,4 +58,40 @@ My doctoral research investigates the performance characteristics, market dynami
 
 ---
 
+## Recent Publications
+
+<style>
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.pub-card {
+  background: #fff;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+}
+.pub-card h4 { margin: 0 0 .35rem 0; font-size: 1.05rem; }
+.pub-card .meta { color: #4a5568; font-size: .9rem; margin-bottom: .5rem; }
+.pub-card a { color: #2b6cb0; text-decoration: none; font-weight: 600; }
+.pub-card a:hover { text-decoration: underline; }
+</style>
+
+<div class="pub-grid">
+  <div class="pub-card">
+    <h4>Monetizing Digital Infrastructure</h4>
+    <div class="meta">2024</div>
+    <a href="/sandeep-research-portfolio/assets/files/Monetizing%20Digital%20Infrastructure.pdf" target="_blank" rel="noopener">Download PDF</a>
+  </div>
+  <div class="pub-card">
+    <h4>ADRIS 2025 Revised</h4>
+    <div class="meta">2025</div>
+    <a href="/sandeep-research-portfolio/assets/files/ADRIS%202025%20Revised.pdf" target="_blank" rel="noopener">Download PDF</a>
+  </div>
+</div>
+
+---
+
 *"Bridging the gap between academic research and practical real estate investment insights in the Indian market."*
