@@ -15,6 +15,25 @@ author_profile: true
   --bg: #f7fafc;
 }
 
+.page__content, .progress-wrap {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+}
+
+.progress-header {
+  background: #fff;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  padding: .75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.progress-header nav { display: flex; gap: .5rem; flex-wrap: wrap; }
+.progress-header a { color: var(--text); text-decoration: none; padding: .25rem .5rem; border-radius: 6px; }
+.progress-header a:hover { background: #edf2f7; }
+
 .progress-wrap {
   display: grid;
   gap: 2rem;
@@ -61,18 +80,36 @@ author_profile: true
 .milestones ul { margin: 0; padding-left: 1.25rem; }
 .milestones li { margin: .35rem 0; }
 
+.progress-footer {
+  margin-top: .5rem;
+  background: var(--bg);
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
 @media (max-width: 640px) {
   .progress-hero { padding: 1.25rem; border-radius: 10px; }
 }
 </style>
 
 <div class="progress-wrap">
+  <header class="progress-header">
+    <strong>Research Portfolio</strong>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#milestones">Milestones</a>
+      <a href="#next">Next</a>
+    </nav>
+  </header>
   <section class="progress-hero">
     <h1>Research Progress</h1>
     <p>Tracking key milestones and ongoing projects across REITs &amp; InvITs in India (Bengaluru focus).</p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Featured Research Projects</h2>
     <div class="projects-grid">
       <article class="project-card">
@@ -107,7 +144,7 @@ author_profile: true
     </div>
   </section>
 
-  <section class="milestones">
+  <section class="milestones" id="milestones">
     <h2>Recent Milestones</h2>
     <ul>
       <li>Q1 2024: Proposal defense completed; IRB approval granted.</li>
@@ -116,7 +153,7 @@ author_profile: true
     </ul>
   </section>
 
-  <section>
+  <section id="next">
     <h2>What’s Next</h2>
     <ul>
       <li>Complete primary data collection and finalize interview coding.</li>
@@ -124,4 +161,8 @@ author_profile: true
       <li>Prepare conference presentation on Bengaluru CRE dynamics.</li>
     </ul>
   </section>
+
+  <footer class="progress-footer">
+    © {{ site.time | date: "%Y" }} Sandeep S · Bengaluru, India
+  </footer>
 </div>
