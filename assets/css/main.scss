@@ -320,3 +320,8 @@ body::before {
     margin-left: 0 !important;
   }
 }
+
+// Ensure the hero section doesn't block the background image
+.page__hero {
+  background: transparent !important;
+}
