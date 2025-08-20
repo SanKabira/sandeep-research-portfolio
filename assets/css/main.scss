@@ -30,6 +30,34 @@
         "vendor/font-awesome/solid",
         "vendor/font-awesome/brands";
 
+// Sitewide background image and overlay
+body {
+  background: url('https://cdn.cosmos.so/50aef449-8b2d-4554-be5c-6b195ae88ceb?format=jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+// Ensure content is above overlay
+.page,
+.page__content,
+.masthead,
+.page__footer,
+.sidebar,
+.initial-content {
+  position: relative;
+  z-index: 1;
+}
+
 // Custom styles for enhanced academic portfolio
 .page__hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
