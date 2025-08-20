@@ -5,276 +5,167 @@ permalink: /cv/
 author_profile: true
 ---
 
+# Curriculum Vitae
+
+## Sandeep S
+**Financial Analyst & Research Scholar**
+
+📧 ss3634367@gmail.com | 📱 +91 9036224467  
+📍 Mysuru, Karnataka, India  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/sandeep-s-415577243/)
+
+---
+
+## Current Position
+
+**Public Relations Officer**  
+*Mysore University School of Engineering, University of Mysore*  
+November 2022 - April 2025
+
+---
+
 ## Education
 
-### PhD in Finance (In Progress)
-**Alliance School of Business, Alliance University, Bengaluru**  
-*August 2023 - July 2026 (Expected)*  
-- **Specialization**: Real Estate Investment Trusts (REITs) and Infrastructure Investment Trusts (InvITs)
-- **Supervisor**: Dr. Aparna Pavani. S (Associate Professor)
-- **CGPA**: 3.8/4.0
-- **Thesis Topic**: "Performance Analysis of REITs and InvITs in India: A Regional Focus on Bengaluru"
+### **Ph.D in Management (Finance and Accounting)** | *2024-2026*
+**Alliance University, Bengaluru**
+- Research Scholar (Part Time)
+- Pre-PhD coursework completed with SGPA: 8.5 (79.3%)
+- Current Status: Active researcher focusing on financial management
 
-### Master of Business Administration (MBA) - Finance
-**Alliance School of Business, Alliance University, Bengaluru**  
-*2021 - 2023*  
-- **CGPA**: 3.7/4.0
-- **Specialization**: Finance and Investment Management
-- **Dissertation**: "Impact of ESG Factors on Real Estate Investment Performance in India"
-- **Awards**: Dean's List (2022, 2023), Best Finance Student Award (2023)
+### **Master of Commerce in Finance and Accounting (CGMA)** | *2019-2021*
+**Kristu Jayanti College, Bengaluru** (Autonomous, Bengaluru North University)
+- **Grade**: 75%
+- **Specialization**: Finance and Accounting with CGMA certification pathway
 
-### Bachelor of Commerce (B.Com) - Honours
-**St. Joseph's College, Bengaluru**  
-*2018 - 2021*  
-- **Percentage**: 85.6%
-- **Specialization**: Finance and Accounting
-- **Final Year Project**: "Comparative Analysis of Mutual Fund Performance in India"
+### **Bachelor of Commerce (Finance)** | *2016-2019*
+**Christ College, Mysuru** (University of Mysore)
+- **Grade**: 76%
+- **Achievement**: First rank holder in 5th and 6th semesters, College 3rd topper overall
 
 ---
 
-## Research Experience
+## Research & Publications
 
-### PhD Research Scholar
-**Alliance School of Business, Alliance University**  
-*August 2023 - Present*
-- Conducting comprehensive research on REITs and InvITs in Indian market
-- Analyzing performance metrics and investment characteristics
-- Developing econometric models for real estate investment analysis
-- Supervising MBA student dissertations and research projects
+### **Published Research**
+- **"Portfolio Risk and Return Analysis of Selected Stocks in NSE, India"**  
+  *Proceedings published with ISBN 978-81-910561-9-8, December 2020*
 
-### Research Assistant
-**Centre for Financial Studies, Alliance University**  
-*January 2023 - July 2023*
-- Assisted in research projects on Indian capital markets
-- Data collection and analysis for faculty research publications
-- Literature review and report preparation
-- Supported conference organization and academic events
-
----
-
-## Teaching Experience
-
-### Graduate Teaching Assistant
-**Alliance School of Business, Alliance University**  
-*August 2023 - Present*
-
-**Courses Assisted:**
-- Financial Markets and Institutions (MBA Core)
-- Real Estate Finance (MBA Elective)
-- Investment Analysis and Portfolio Management (MBA Core)
-- Research Methodology in Business (PhD Course)
-
-**Responsibilities:**
-- Conducting tutorial sessions and practical workshops
-- Grading assignments and examinations
-- Student mentoring and academic guidance
-- Developing case studies and teaching materials
-
-### Guest Lecturer
-**Various Institutions**  
-*2024 - Present*
-- "Introduction to REITs and InvITs in India" - Alliance School of Business
-- "Real Estate as an Asset Class" - Christ University, Bengaluru
-- "Research Methods in Finance" - Alliance School of Business
-
----
-
-## Publications
-
-### Peer-Reviewed Articles
-1. **"Performance Analysis of Indian REITs: A Comparative Study with International Markets"**  
-   *Status: Under Review - Journal of Real Estate Research*
-
-### Working Papers
-2. **"Infrastructure Investment Trusts in India: An Emerging Asset Class Analysis"**  
-   *In Preparation for International Real Estate Review*
-
-3. **"Regional Analysis of REIT Performance: The Bengaluru Advantage"**  
-   *Target: Journal of Real Estate Research*
-
-### Conference Papers
-4. **"REITs and InvITs: Transforming India's Real Estate Investment Landscape"**  
-   *National Conference on Financial Markets, Alliance University, March 2024*
-
-5. **"Bengaluru Real Estate Market: Investment Opportunities through REITs"**  
-   *South India Real Estate Investment Summit, January 2024*
+### **Current Research Project**
+- **"A Study on Determinants of Dividend Policy of Selected FMCG Companies in India"**  
+  *Empirical analysis examining factors influencing dividend policy, with focus on DER, DPR, CT, and ERN impact on EPS and dividend payout predictions in FMCG sector*
 
 ---
 
 ## Professional Experience
 
-### Investment Research Intern
-**CRISIL Limited, Bengaluru**  
-*May 2022 - July 2022*
-- Conducted research on real estate and infrastructure sectors
-- Prepared investment reports and market analysis
-- Assisted in credit rating analysis for real estate companies
-- Developed financial models for property valuation
+### **Public Relations Officer** | *Nov 2022 - Apr 2025*
+**Mysore University School of Engineering, University of Mysore**
 
-### Financial Analyst Intern
-**Knight Frank India, Bengaluru**  
-*December 2021 - February 2022*
-- Analyzed commercial real estate market trends
-- Prepared market reports and investment presentations
-- Conducted due diligence for real estate transactions
-- Supported client advisory services
+**Strategic Communications & Media Relations:**
+- Developed comprehensive media relations strategies increasing institutional visibility in regional and national educational publications
+- Coordinated press conferences and media events showcasing innovative research and achievements
+- Created compelling digital content resulting in 40% increase in online engagement
+- Managed crisis communications ensuring transparent stakeholder dialogue
+
+**Academic Administration & Compliance:**
+- Served as Single Point of Contact (SPOC) for Infosys Springboard initiative
+- Managed AICTE approval processes and compliance for admission procedures
+- Coordinated institutional audits for three consecutive years
+- Facilitated FRRO procedures for international student admissions with International Centre
+
+**Committee Memberships:**
+- Training and Placement Advisory Committee
+- Admission Committee  
+- Anti-ragging Committee
+- Grievance Redressal Committee
+- SC-ST Committee
+
+### **Partner** | *2014-2016*
+**Savita Enterprises**
+- Full-time partner managing sales operations, inventory management, and banking operations
+- Maintained comprehensive sales records and ensured operational efficiency
 
 ---
 
 ## Technical Skills
 
-### Statistical Software
-- **R**: Advanced (Data analysis, econometric modeling, visualization)
-- **Python**: Intermediate (Financial analysis, machine learning)
-- **STATA**: Advanced (Econometric analysis, panel data modeling)
-- **SPSS**: Intermediate (Survey data analysis, statistical testing)
+### **Data Analysis & Statistics**
+- **SPSS**: Advanced statistical analysis and hypothesis testing (50% proficiency)
+- **Regression Analysis**: Implementation of various analytical techniques
+- **Tableau**: Data visualization and dashboard creation (15% proficiency)
 
-### Database and Tools
-- **SQL**: Intermediate (Database management and querying)
-- **Bloomberg Terminal**: Advanced (Financial data analysis)
-- **Excel/VBA**: Advanced (Financial modeling, automation)
-- **NVivo**: Intermediate (Qualitative data analysis)
+### **Financial Analysis**
+- **IFRS**: Financial statement preparation and analysis
+- **Financial Forecasting**: Strategic decision-making support
+- **Venture Valuation**: Investment opportunity evaluation and sensitivity analysis
+- **Conjoint Analysis**: Customer preference analysis
 
-### Programming and Web
-- **LaTeX**: Advanced (Academic writing and thesis preparation)
-- **Tableau**: Intermediate (Data visualization)
-- **Git/GitHub**: Basic (Version control for research projects)
-
----
-
-## Awards and Honors
-
-### Academic Awards
-- **University Gold Medal** - Best PhD Research Proposal (2024)
-- **Dean's List** - Alliance School of Business (2022, 2023)
-- **Best Finance Student Award** - MBA Program (2023)
-- **Merit Scholarship** - Alliance University (2021-2023)
-
-### Research Recognition
-- **Best Paper Award** - National Conference on Financial Markets (2024)
-- **Young Researcher Award** - South India Real Estate Summit (2024)
-- **Research Excellence Grant** - Alliance University (2024)
+### **Software Proficiency**
+- **MS Office Suite**: Word (65%), PowerPoint (68%), Excel (30%)
+- **Statistical Software**: SPSS for complex data analysis
+- **Financial Reporting**: Regulatory and managerial aspects
 
 ---
 
-## Professional Memberships
+## Key Achievements & Awards
 
-- **Indian Finance Association (IFA)** - Student Member
-- **Real Estate Research Institute (RERI)** - Associate Member
-- **CFA Institute** - CFA Level I Candidate
-- **National Association of Real Estate Investment Trusts (NAREIT)** - International Member
+### **Academic Excellence**
+- **M.Com**: 3rd prize in Venture Capitalist event (Intra College Fest)
+- **B.Com**: 1st prize in Quiz competition, 1st prize in Cricket (Sports Meet)
+- **B.Com**: First rank holder for consecutive semesters, College 3rd topper
+- **Talent Hunt**: 3rd prize winner
+
+### **Professional Recognition**
+- **Certificate of Appreciation** from M.S. Ramaiah Institute of Technology for paper presentation on "Opportunities and Challenges of Social Entrepreneurship in India"
+- **Workshop Certifications**: SPSS Workshop, Tableau Workshop
+- **Event Coordination**: Successfully coordinated "Impulse 2K20" intra-college fest
 
 ---
 
-## Certifications
+## Research Interests
 
-### Professional Certifications
-- **Financial Risk Manager (FRM)** - Part I Cleared (GARP, 2023)
-- **Chartered Financial Analyst (CFA)** - Level I Candidate
-- **Certificate in Real Estate Finance** - Wharton Online (2023)
-- **Python for Finance** - Coursera Specialization (2023)
+- **Corporate Finance**: Dividend policy determinants and capital structure decisions
+- **Portfolio Management**: Risk-return optimization in Indian equity markets
+- **Financial Markets**: NSE stock analysis and investment strategies
+- **Social Entrepreneurship**: Opportunities and challenges in Indian context
+- **FMCG Sector Analysis**: Financial performance and dividend payout patterns
 
-### Academic Certifications
-- **Certificate in University Teaching** - Alliance University (2024)
-- **Research Ethics Certification** - CITI Program (2023)
-- **Advanced Econometrics** - Indian Statistical Institute (2024)
+---
+
+## Professional Competencies
+
+### **Core Strengths**
+- **Time Management**: Focused approach prioritizing quality over multitasking
+- **Ethical Leadership**: Strong integrity and responsibility in professional conduct
+- **Analytical Thinking**: Data-driven decision making and trend analysis
+- **Stakeholder Management**: Effective communication with diverse audiences
+- **Research Excellence**: Published researcher with ongoing doctoral studies
+
+### **Leadership Experience**
+- **Multi-committee Leadership**: Active member of 5+ institutional committees
+- **Crisis Management**: Effective communication during challenging situations
+- **Industry Relations**: Built partnerships leading to student internship opportunities
+- **International Coordination**: Facilitated foreign student admission processes
 
 ---
 
 ## Languages
-
-- **English**: Native/Fluent (Academic and Professional)
-- **Hindi**: Fluent (Speaking, Reading, Writing)
-- **Kannada**: Intermediate (Speaking, Basic Reading)
-- **Tamil**: Basic (Speaking)
+- **Kannada**: Native proficiency
+- **English**: Professional proficiency  
+- **Hindi**: Conversational proficiency
 
 ---
 
-## Research Grants and Funding
-
-### Current Funding
-- **PhD Fellowship** - Alliance University (₹25,000/month, 2023-2026)
-- **Research Grant** - Alliance University (₹2,00,000, 2024)
-- **Conference Travel Grant** - University Grants Commission (₹50,000, 2024)
-
-### Grant Applications
-- **ICSSR Doctoral Fellowship** - Under Review (₹31,000/month)
-- **DST-INSPIRE Fellowship** - Applied (₹35,000/month)
+## Personal Interests
+- **Professional Development**: Entrepreneurship literature and motivational content
+- **Financial Markets**: Stock trading webinars and entrepreneur podcasts
+- **Music**: MTV Unplugged and Coke Studio enthusiast
+- **Continuous Learning**: Regular participation in professional webinars
 
 ---
 
-## Conference Presentations
-
-### International Conferences
-- **Asian Real Estate Society Annual Conference** - Singapore (Scheduled: December 2024)
-
-### National Conferences
-- **National Conference on Financial Markets and Investment Strategies** - Bengaluru (March 2024)
-- **South India Real Estate Investment Summit** - Bengaluru (January 2024)
-- **Indian Finance Association Annual Conference** - Mumbai (Scheduled: November 2024)
+*Last Updated: August 2025*
 
 ---
 
-## Editorial and Review Activities
-
-### Peer Review
-- **Journal of Real Estate Research** - Reviewer (2024)
-- **International Journal of Strategic Property Management** - Reviewer (2024)
-
-### Editorial Assistance
-- **Alliance Journal of Business Research** - Editorial Assistant (2024)
-
----
-
-## Media and Outreach
-
-### Blog Posts and Articles
-- "Understanding REITs: A Beginner's Guide for Indian Investors" - *Financial Express Online* (March 2024)
-- "Why Bengaluru is Becoming a REIT Hotspot" - *Economic Times Real Estate* (February 2024)
-- "The Future of Infrastructure Investment in India" - *Business Standard* (January 2024)
-
-### Media Interviews
-- "The Future of REITs in India" - *CNBC-TV18* (January 2024)
-- "Investment Opportunities in Indian InvITs" - *Bloomberg Quint* (December 2023)
-
-### Social Media
-- **LinkedIn**: 2,500+ connections, regular posts on real estate investment
-- **Twitter**: @SandeepREITResearch (1,200+ followers)
-- **ResearchGate**: Active profile with research publications and updates
-
----
-
-## References
-
-### Academic References
-
-**Dr. Aparna Pavani. S**  
-Associate Professor and PhD Supervisor  
-Alliance School of Business, Alliance University  
-Email: aparna.pavani@alliance.edu.in  
-Phone: +91-80-XXXX-XXXX
-
-**Dr. Rajesh Kumar**  
-Professor of Finance  
-Alliance School of Business, Alliance University  
-Email: rajesh.kumar@alliance.edu.in  
-Phone: +91-80-XXXX-XXXX
-
-### Industry References
-
-**Mr. Aditya Virwani**  
-Chief Operating Officer  
-Embassy Office Parks REIT  
-Email: aditya.virwani@embassy.in  
-Phone: +91-80-XXXX-XXXX
-
-**Ms. Priya Sharma**  
-Senior Vice President  
-Knight Frank India  
-Email: priya.sharma@knightfrank.com  
-Phone: +91-80-XXXX-XXXX
-
----
-
-*Last Updated: March 2024*  
-*Download PDF Version: [CV_Sandeep_S_2024.pdf](/assets/files/CV_Sandeep_S_2024.pdf)*
+> **Research Philosophy**: "I believe that rigorous financial research combined with practical industry insights can drive meaningful contributions to corporate finance literature and practice. My work focuses on bridging academic theory with real-world financial decision-making."
