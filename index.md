@@ -10,6 +10,45 @@ share: false
 
 I am a PhD Research Scholar at **Alliance School of Business, Alliance University, Bengaluru**, specializing in **Real Estate Investment Trusts (REITs)** and **Infrastructure Investment Trusts (InvITs)** in the Indian market.
 
+<!-- ===== Featured Image Section ===== -->
+<section style="max-width:1100px; margin:2.5rem auto; padding:0 1rem;">
+  <style>
+    .figure-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      overflow: hidden;
+    }
+    .figure-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .figure-caption {
+      padding: 0.875rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    @media (prefers-color-scheme: dark) {
+      .figure-card { background: #0b0c0d; border-color: #202225; }
+      .figure-caption { color: #c7cad1; }
+    }
+  </style>
+
+  <figure class="figure-card">
+    <img
+      src="https://cdn.cosmos.so/142fec22-fa20-4440-b1a3-8a4bbf06844a?format=jpeg"
+      alt="Spiral staircase view from above"
+      loading="lazy"
+    />
+    <figcaption class="figure-caption">
+      Spiral staircase (Vatican Museums)
+    </figcaption>
+  </figure>
+</section>
+
 ### Current Research Focus
 My doctoral research investigates the performance characteristics, market dynamics, and investment potential of REITs and InvITs in India, with particular emphasis on the **Bengaluru metropolitan region**. This research aims to contribute to the understanding of these emerging asset classes in the Indian context and provide insights for investors, policymakers, and market participants.
 
