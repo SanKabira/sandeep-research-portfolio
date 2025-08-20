@@ -1,10 +1,19 @@
-
 ---
 layout: home
 title: "Sandeep S"
 subtitle: "PhD Research Scholar · Real Estate Investment Trusts & Infrastructure Investment Trusts"
 share: false
 ---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<style>
+#vanta-bg { width: 100%; min-height: 100vh; position: relative; overflow: hidden; }
+.home-content { position: relative; z-index: 1; }
+</style>
+
+<div id="vanta-bg">
+  <div class="home-content">
 
 ## Welcome to My Academic Portfolio
 
@@ -134,3 +143,25 @@ My doctoral research investigates the performance characteristics, market dynami
 ---
 
 *"Bridging the gap between academic research and practical real estate investment insights in the Indian market."*
+
+  </div>
+</div>
+
+<script>
+  if (window.VANTA && VANTA.WAVES) {
+    VANTA.WAVES({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0077ff,
+      shininess: 50,
+      waveHeight: 20,
+      waveSpeed: 1.0,
+      zoom: 0.85
+    });
+  }
+</script>
