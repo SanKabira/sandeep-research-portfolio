@@ -38,6 +38,11 @@ body {
   position: relative; // create stacking context for overlay and content
 }
 
+// Override theme defaults that paint solid backgrounds
+html, body {
+  background-color: transparent !important;
+}
+
 body::before {
   content: "";
   position: fixed;
