@@ -12,17 +12,19 @@ I am a PhD Research Scholar at **Alliance School of Business, Alliance Universit
 <!-- ===== Featured Video Section ===== -->
 <section style="max-width:1100px; margin:1.5rem auto; padding:0 1rem;">
   <div style="position:relative; padding-top:56.25%; border-radius: 14px; overflow:hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.12);">
-    <iframe
-      src="https://g.co/gemini/share/a1e0506c13be"
+    <video
+      src="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}"
       title="Featured video"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen
-      loading="lazy"
-      referrerpolicy="no-referrer"
-    ></iframe>
+      controls
+      preload="metadata"
+    >
+      Sorry, your browser doesn't support embedded videos.
+      <a href="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}">Download the video</a>.
+    </video>
   </div>
   <div style="text-align:center; font-size:0.95rem; color:#4b5563; margin-top:.5rem;">
-    If the video doesn't load, <a href="https://g.co/gemini/share/a1e0506c13be" target="_blank" rel="noopener">open it in a new tab</a>.
+    If the video doesn't load, <a href="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}" target="_blank" rel="noopener">open or download it in a new tab</a>.
   </div>
 </section>
 
