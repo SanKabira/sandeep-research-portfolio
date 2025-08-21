@@ -12,17 +12,20 @@ I am a PhD Research Scholar at **Alliance School of Business, Alliance Universit
 <!-- ===== Featured Video Section ===== -->
 <section style="max-width:1100px; margin:1.5rem auto; padding:0 1rem;">
   <div style="position:relative; padding-top:56.25%; border-radius: 14px; overflow:hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.12);">
-    <iframe
-      src="https://g.co/gemini/share/a1e0506c13be"
+    <video
       title="Featured video"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen
-      loading="lazy"
-      referrerpolicy="no-referrer"
-    ></iframe>
+      controls
+      preload="metadata"
+      playsinline
+    >
+      <source src="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}" type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+      <a href="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}">Download the video</a>.
+    </video>
   </div>
   <div style="text-align:center; font-size:0.95rem; color:#4b5563; margin-top:.5rem;">
-    If the video doesn't load, <a href="https://g.co/gemini/share/a1e0506c13be" target="_blank" rel="noopener">open it in a new tab</a>.
+    If the video doesn't load, <a href="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}" target="_blank" rel="noopener">open or download it in a new tab</a>.
   </div>
 </section>
 
@@ -74,44 +77,7 @@ My doctoral research investigates the performance characteristics, market dynami
 
 ---
 
-<!-- ===== Featured Image Section (moved below Quick Links) ===== -->
-<section style="max-width:1100px; margin:2.0rem auto; padding:0 1rem;">
-  <style>
-    .figure-card {
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-      overflow: hidden;
-    }
-    .figure-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .figure-caption {
-      padding: 0.875rem 1rem;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
-    @media (prefers-color-scheme: dark) {
-      .figure-card { background: #0b0c0d; border-color: #202225; }
-      .figure-caption { color: #c7cad1; }
-    }
-  </style>
-
-  <figure class="figure-card">
-    <img
-      src="https://cdn.cosmos.so/142fec22-fa20-4440-b1a3-8a4bbf06844a?format=jpeg"
-      alt="Spiral staircase view from above"
-      loading="lazy"
-    />
-    <figcaption class="figure-caption">
-      Spiral staircase (Vatican Museums)
-    </figcaption>
-  </figure>
-</section>
+<!-- Featured image section removed per request -->
 
 ## Recent Publications
 
