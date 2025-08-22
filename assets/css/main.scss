@@ -288,11 +288,22 @@
   background: transparent !important;
 }
 
-// Global background: removed image and overlay
-html, body { height: 100%; }
+// Base layout: white background and dark text
+html, body { height: 100%; margin: 0; padding: 0; }
 body {
-  background: none !important;
-  color: inherit;
+  background-color: #fff !important;
+  color: #222 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Main content grows to push footer to bottom
+.main-content { flex: 1 0 auto; }
+
+// Avoid unintended dark mode unless explicitly chosen elsewhere
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="dark"] & { /* only apply if explicitly set via data-theme */ }
 }
 
 // Footer should follow content; remove sticky behavior
