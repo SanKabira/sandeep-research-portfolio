@@ -12,17 +12,19 @@ I am a PhD Research Scholar at **Alliance School of Business, Alliance Universit
 <!-- ===== Featured Video Section ===== -->
 <section style="max-width:1100px; margin:1.5rem auto; padding:0 1rem;">
   <div style="position:relative; padding-top:56.25%; border-radius: 14px; overflow:hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.12);">
-    <iframe
-      src="https://g.co/gemini/share/a1e0506c13be"
-      title="Featured video"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen
-      loading="lazy"
-      referrerpolicy="no-referrer"
-    ></iframe>
+    <video
+      src="{{ '/sandeep-research-portfolio/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}"
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; object-fit:cover;"
+      playsinline
+      controls
+      preload="metadata"
+      poster="{{ '/images/video-poster.jpg' | relative_url }}"
+    >
+      Sorry, your browser doesn't support embedded videos. You can <a href="{{ '/sandeep-research-portfolio/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}">download the video</a> instead.
+    </video>
   </div>
   <div style="text-align:center; font-size:0.95rem; color:#4b5563; margin-top:.5rem;">
-    If the video doesn't load, <a href="https://g.co/gemini/share/a1e0506c13be" target="_blank" rel="noopener">open it in a new tab</a>.
+    If the video doesn't load, <a href="{{ '/sandeep-research-portfolio/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}" target="_blank" rel="noopener">open it in a new tab</a>.
   </div>
 </section>
 
