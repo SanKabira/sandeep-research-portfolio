@@ -288,36 +288,9 @@
   background: transparent !important;
 }
 
-// Global background with 50% overlay and white text
+// Global background: removed image and overlay
 html, body { height: 100%; }
 body {
-  background: url('https://cdn.cosmos.so/dba9a8bd-28c9-4547-bcc6-90863df0c2e3?format=jpeg') no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-  pointer-events: none;
-}
-
-// Ensure content appears above overlay and backgrounds are transparent
-.masthead,
-.page,
-.page__inner,
-.page__content,
-.page__footer,
-.sidebar,
-.initial-content {
-  position: relative;
-  z-index: 1;
-  background: transparent !important;
+  background: none !important;
+  color: inherit;
 }
