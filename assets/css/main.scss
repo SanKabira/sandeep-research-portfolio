@@ -295,13 +295,5 @@ body {
   color: inherit;
 }
 
-// Sticky footer: keep footer at bottom of viewport on short pages
-html, body { height: 100%; }
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.page__footer {
-  margin-top: auto;
-}
+// Footer should follow content; remove sticky behavior
+.page__footer { clear: both; }
