@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "Sandeep S"
 subtitle: "PhD Research Scholar · Real Estate Investment Trusts & Infrastructure Investment Trusts"
 share: false
