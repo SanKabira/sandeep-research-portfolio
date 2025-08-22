@@ -1,12 +1,12 @@
 {% include base_path %}
 
 
+<div class="page__footer-copyrig  ht">
+  &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated {{ site.time | date: '%Y-%m-%d' }}
+</div>
 <div class="page__footer-custom">
   <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
   &nbsp;&nbsp;
   <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">Feed</a>
-</div>
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ site.time | date: '%Y-%m-%d' }}
 </div>
