@@ -13,12 +13,14 @@ I am a PhD Research Scholar at **Alliance School of Business, Alliance Universit
 <section style="max-width:1100px; margin:1.5rem auto; padding:0 1rem;">
   <div style="position:relative; padding-top:56.25%; border-radius: 14px; overflow:hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.12);">
     <video
-      src="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; object-fit:cover;"
       playsinline
+      muted
+      autoplay
       controls
       preload="metadata"
     >
+      <source src="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}" type="video/mp4" />
       Sorry, your browser doesn't support embedded videos. You can <a href="{{ '/Futuristic_Infrastructure_Investment_Vision.mp4' | relative_url }}">download the video</a> instead.
     </video>
   </div>
