@@ -153,5 +153,3 @@ My doctoral research investigates the performance characteristics, market dynami
 ---
 
 *"Bridging the gap between academic research and practical real estate investment insights in the Indian market."*
-
-<a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
