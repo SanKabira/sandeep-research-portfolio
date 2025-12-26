@@ -319,3 +319,136 @@ body {
 .page__footer footer {
   padding: 0.75rem 1rem;
 }
+
+// ==========================================
+// SPLINE 3D INTEGRATION STYLES
+// ==========================================
+
+// Container for Spline iframes
+.spline-container, .about-3d, .timeline-3d, .skills-3d {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: transparent; // Ensure it blends if iframe has transparency
+}
+
+// Hero Section specific
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  .hero-text {
+    margin-top: -20px; // Pull text slightly up if needed
+    z-index: 10;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+      color: #718096;
+    }
+  }
+}
+
+// Projects Grid with 3D Icons
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.project-card {
+  background: #fff; // Light theme default
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  h3 {
+    margin: 1rem 0 0.5rem;
+    color: #2d3748;
+  }
+  
+  p {
+    color: #718096;
+    font-size: 0.95rem;
+  }
+}
+
+// Skills Section
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+    .skill {
+      background: #edf2f7;
+      color: #4a5568;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// Dark Theme adjustments (if site supports it via body class or media query)
+@media (prefers-color-scheme: dark) {
+  body[data-theme="dark"] {
+    .project-card {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.1);
+      
+      h3 { color: #f7fafc; }
+      p { color: #cbd5e0; }
+    }
+    
+    .skills-list .skill {
+      background: rgba(255,255,255,0.1);
+      color: #e2e8f0;
+    }
+  }
+}
+
+// Responsive overrides
+@media (max-width: 768px) {
+  .spline-container, .about-3d, .timeline-3d, .skills-3d, .icon-container {
+    // Force specific height on mobile if needed, though inline styles usually handle it.
+    // Making sure iframes don't overflow
+    width: 100% !important;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-section .hero-text {
+    h1 { font-size: 2rem; }
+  }
+}

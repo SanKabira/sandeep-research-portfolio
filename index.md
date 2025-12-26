@@ -5,9 +5,22 @@ subtitle: "PhD Research Scholar · Real Estate Investment Trusts & Infrastructur
 share: false
 ---
 
-## Welcome to My Academic Portfolio
-
-I am a PhD Research Scholar at **Alliance School of Business, Alliance University, Bengaluru**, specializing in **Real Estate Investment Trusts (REITs)** and **Infrastructure Investment Trusts (InvITs)** in the Indian market.
+<!-- Hero Section with 3D Text -->
+<section id="hero" class="hero-section">
+  <div class="spline-container" style="height: 500px; width: 100%;">
+    <iframe src="https://my.spline.design/3dtext-blue-XXXXXXXXXXXX/" 
+            frameborder="0" 
+            width="100%" 
+            height="100%"
+            style="border: none; border-radius: 12px;"></iframe>
+  </div>
+  <div class="hero-text">
+    <h1>PhD Research Portfolio</h1>
+    <p>REITs & InvITs Specialization</p>
+  </div>
+  
+  <p style="margin-top: 2rem;">I am a PhD Research Scholar at <strong>Alliance School of Business, Alliance University, Bengaluru</strong>, specializing in <strong>Real Estate Investment Trusts (REITs)</strong> and <strong>Infrastructure Investment Trusts (InvITs)</strong> in the Indian market.</p>
+</section>
 
 <!-- ===== Featured Video Section ===== -->
 <section style="max-width:1100px; margin:1.5rem auto; padding:0 1rem;">
@@ -29,19 +42,66 @@ I am a PhD Research Scholar at **Alliance School of Business, Alliance Universit
   </div>
 </section>
 
-### Current Research Focus
-My doctoral research investigates the performance characteristics, market dynamics, and investment potential of REITs and InvITs in India, with particular emphasis on the **Bengaluru metropolitan region**. This research aims to contribute to the understanding of these emerging asset classes in the Indian context and provide insights for investors, policymakers, and market participants.
+<!-- About Section with 3D Paths -->
+<section id="about" class="about-section">
+  <div class="about-3d" style="height: 350px; margin: 30px 0;">
+    <iframe src="https://my.spline.design/3dpathshandwritten-XXXXXXXXXXXX/" 
+            frameborder="0" 
+            width="100%" 
+            height="100%"
+            style="border: none;"></iframe>
+  </div>
+  <div class="about-content">
+    <h2>Current Research Focus</h2>
+    <p>My doctoral research investigates the performance characteristics, market dynamics, and investment potential of REITs and InvITs in India, with particular emphasis on the <strong>Bengaluru metropolitan region</strong>. This research aims to contribute to the understanding of these emerging asset classes in the Indian context and provide insights for investors, policymakers, and market participants.</p>
+  </div>
+</section>
 
 ### Research Supervision
 **Primary Supervisor**: Dr. Aparna Pavani. S  
 *Associate Professor, Alliance School of Business*
 
-### Key Research Areas
-- **REIT Performance Analysis**: Comparative studies with international markets
-- **InvIT Market Development**: Emerging trends in infrastructure investment
-- **Regional Real Estate Dynamics**: Bengaluru market characteristics and opportunities
-- **Investor Behavior**: Decision-making patterns in Indian REIT/InvIT investments
-- **Regulatory Impact**: Policy framework effects on market development
+<!-- Projects Grid with 3D Icons -->
+<section id="projects" class="projects-section">
+  <h2>Key Research Areas</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="icon-container" style="height: 300px;">
+        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+      <h3>REIT Performance Analysis</h3>
+      <p>Comparative studies with international markets</p>
+    </div>
+    <div class="project-card">
+      <div class="icon-container" style="height: 300px;">
+        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+      <h3>InvIT Market Development</h3>
+      <p>Emerging trends in infrastructure investment</p>
+    </div>
+    <div class="project-card">
+      <div class="icon-container" style="height: 300px;">
+        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+      <h3>Regional Real Estate Dynamics</h3>
+      <p>Bengaluru market characteristics and opportunities</p>
+    </div>
+    <div class="project-card">
+      <div class="icon-container" style="height: 300px;">
+        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+      <h3>Investor Behavior</h3>
+      <p>Decision-making patterns in Indian REIT/InvIT investments</p>
+    </div>
+    <div class="project-card">
+      <div class="icon-container" style="height: 300px;">
+        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+      <h3>Regulatory Impact</h3>
+      <p>Policy framework effects on market development</p>
+    </div>
+  </div>
+</section>
 
 ### Academic Contributions
 - **Publications**: Research papers in peer-reviewed journals (in progress)
@@ -51,13 +111,41 @@ My doctoral research investigates the performance characteristics, market dynami
 
 ---
 
-## Recent Updates
+<!-- Timeline/Milestones Section -->
+<section id="milestones" class="milestones-section">
+  <h2>Research Milestones</h2>
+  <div class="timeline-3d" style="height: 400px; width: 100%; margin: 40px 0;">
+    <iframe src="https://my.spline.design/clonercubesimple-XXXXXXXXXXXX/" 
+            frameborder="0" 
+            width="100%" 
+            height="100%"
+            style="border: none; border-radius: 12px;"></iframe>
+  </div>
+  <div class="recent-updates">
+    <h3>Recent Updates</h3>
+    <p><strong>March 2024</strong>: Presented research findings at the National Conference on Financial Markets and Investment Strategies</p>
+    <p><strong>February 2024</strong>: Successfully defended PhD research proposal with distinction</p>
+    <p><strong>January 2024</strong>: Featured in CNBC-TV18 interview discussing the future of REITs in India</p>
+  </div>
+</section>
 
-**March 2024**: Presented research findings at the National Conference on Financial Markets and Investment Strategies
-
-**February 2024**: Successfully defended PhD research proposal with distinction
-
-**January 2024**: Featured in CNBC-TV18 interview discussing the future of REITs in India
+<!-- Interactive Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>Research & Technical Skills</h2>
+  <div class="skills-3d" style="height: 450px; width: 100%;">
+    <iframe src="https://my.spline.design/hands3dui-XXXXXXXXXXXX/" 
+            frameborder="0" 
+            width="100%" 
+            height="100%"
+            style="border: none;"></iframe>
+  </div>
+  <div class="skills-list">
+    <div class="skill">REITs Analysis</div>
+    <div class="skill">Python Programming</div>
+    <div class="skill">TradingView</div>
+    <div class="skill">Statistical Modeling</div>
+  </div>
+</section>
 
 ---
 
