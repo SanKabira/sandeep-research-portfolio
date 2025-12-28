@@ -8,7 +8,7 @@ share: false
 <!-- Hero Section with 3D Text -->
 <section id="hero" class="hero-section">
   <div class="spline-container" style="height: 500px; width: 100%;">
-    <spline-viewer url="https://prod.spline.design/3dtext-blue-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+    <spline-viewer url="https://prod.spline.design/ZWMaX5xwaqd/Vl3j/scene.splinecode"></spline-viewer>
   </div>
   <div class="hero-text">
     <h1>PhD Research Portfolio</h1>
@@ -41,7 +41,7 @@ share: false
 <!-- About Section with 3D Paths -->
 <section id="about" class="about-section">
   <div class="about-3d" style="height: 350px; margin: 30px 0;">
-    <spline-viewer url="https://prod.spline.design/3dpathshandwritten-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+    <spline-viewer url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode"></spline-viewer>
   </div>
   <div class="about-content">
     <h2>Current Research Focus</h2>
