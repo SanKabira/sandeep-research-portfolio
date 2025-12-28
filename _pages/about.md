@@ -1,8 +1,9 @@
 ---
-layout: default
-title: "Sandeep S"
-subtitle: "PhD Research Scholar · Real Estate Investment Trusts & Infrastructure Investment Trusts"
-share: false
+layout: single
+title: "About Me"
+permalink: /about/
+author_profile: true
+share: true
 ---
 
 <!-- Hero Section with 3D Text -->

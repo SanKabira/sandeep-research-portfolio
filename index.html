@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Inherit Jekyll head -->
+    {% include head.html %}
+</head>
+
+<body>
+    <!-- Netflix-style landing -->
+    <div class="netflix-landing">
+        <div class="container">
+            <h1 class="title">Who's watching?</h1>
+            <div class="profiles-grid">
+                <!-- 4 Profile Cards -->
+                <a href="{{ '/cv/' | relative_url }}" class="profile-card recruiter" aria-label="For Recruiters">
+                    <div class="icon">💼</div>
+                    <span>Recruiter</span>
+                </a>
+                <a href="{{ '/publications/' | relative_url }}" class="profile-card researcher"
+                    aria-label="For Researchers">
+                    <div class="icon">🎓</div>
+                    <span>Fellow Researcher</span>
+                </a>
+                <a href="{{ '/research/' | relative_url }}" class="profile-card collaborator"
+                    aria-label="For Collaborators">
+                    <div class="icon">🤝</div>
+                    <span>Collaborator</span>
+                </a>
+                <a href="{{ '/about/' | relative_url }}" class="profile-card guest" aria-label="Explore Portfolio">
+                    <div class="icon">👤</div>
+                    <span>Guest Explorer</span>
+                </a>
+            </div>
+            <a href="{{ '/about/' | relative_url }}" class="skip-btn">Skip & Explore →</a>
+        </div>
+    </div>
+</body>
+
+</html>
