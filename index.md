@@ -8,11 +8,7 @@ share: false
 <!-- Hero Section with 3D Text -->
 <section id="hero" class="hero-section">
   <div class="spline-container" style="height: 500px; width: 100%;">
-    <iframe src="https://my.spline.design/3dtext-blue-XXXXXXXXXXXX/" 
-            frameborder="0" 
-            width="100%" 
-            height="100%"
-            style="border: none; border-radius: 12px;"></iframe>
+    <spline-viewer url="https://prod.spline.design/3dtext-blue-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
   </div>
   <div class="hero-text">
     <h1>PhD Research Portfolio</h1>
@@ -45,11 +41,7 @@ share: false
 <!-- About Section with 3D Paths -->
 <section id="about" class="about-section">
   <div class="about-3d" style="height: 350px; margin: 30px 0;">
-    <iframe src="https://my.spline.design/3dpathshandwritten-XXXXXXXXXXXX/" 
-            frameborder="0" 
-            width="100%" 
-            height="100%"
-            style="border: none;"></iframe>
+    <spline-viewer url="https://prod.spline.design/3dpathshandwritten-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
   </div>
   <div class="about-content">
     <h2>Current Research Focus</h2>
@@ -67,35 +59,35 @@ share: false
   <div class="projects-grid">
     <div class="project-card">
       <div class="icon-container" style="height: 300px;">
-        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
       </div>
       <h3>REIT Performance Analysis</h3>
       <p>Comparative studies with international markets</p>
     </div>
     <div class="project-card">
       <div class="icon-container" style="height: 300px;">
-        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
       </div>
       <h3>InvIT Market Development</h3>
       <p>Emerging trends in infrastructure investment</p>
     </div>
     <div class="project-card">
       <div class="icon-container" style="height: 300px;">
-        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
       </div>
       <h3>Regional Real Estate Dynamics</h3>
       <p>Bengaluru market characteristics and opportunities</p>
     </div>
     <div class="project-card">
       <div class="icon-container" style="height: 300px;">
-        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
       </div>
       <h3>Investor Behavior</h3>
       <p>Decision-making patterns in Indian REIT/InvIT investments</p>
     </div>
     <div class="project-card">
       <div class="icon-container" style="height: 300px;">
-        <iframe src="https://my.spline.design/purple3dicons-XXXXXXXXXXXX/" frameborder="0" width="100%" height="100%" style="border: none;"></iframe>
+        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
       </div>
       <h3>Regulatory Impact</h3>
       <p>Policy framework effects on market development</p>
@@ -115,11 +107,7 @@ share: false
 <section id="milestones" class="milestones-section">
   <h2>Research Milestones</h2>
   <div class="timeline-3d" style="height: 400px; width: 100%; margin: 40px 0;">
-    <iframe src="https://my.spline.design/clonercubesimple-XXXXXXXXXXXX/" 
-            frameborder="0" 
-            width="100%" 
-            height="100%"
-            style="border: none; border-radius: 12px;"></iframe>
+    <spline-viewer url="https://prod.spline.design/clonercubesimple-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
   </div>
   <div class="recent-updates">
     <h3>Recent Updates</h3>
@@ -133,11 +121,7 @@ share: false
 <section id="skills" class="skills-section">
   <h2>Research & Technical Skills</h2>
   <div class="skills-3d" style="height: 450px; width: 100%;">
-    <iframe src="https://my.spline.design/hands3dui-XXXXXXXXXXXX/" 
-            frameborder="0" 
-            width="100%" 
-            height="100%"
-            style="border: none;"></iframe>
+    <spline-viewer url="https://prod.spline.design/hands3dui-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
   </div>
   <div class="skills-list">
     <div class="skill">REITs Analysis</div>
