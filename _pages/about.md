@@ -6,10 +6,17 @@ author_profile: true
 share: true
 ---
 
-<!-- Hero Section with 3D Text -->
+<!-- Spline Viewer Setup -->
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+
 <section id="hero" class="hero-section">
-  <div class="spline-container" style="height: 500px; width: 100%;">
-    <spline-viewer url="https://prod.spline.design/ZWMaX5xwaqd/Vl3j/scene.splinecode"></spline-viewer>
+  <div style="position: relative; width: 100%; max-height: 500px; overflow: hidden; border-radius: 12px; margin-bottom: 2rem;">
+    <img 
+      src="{{ '/assets/images/hero-reit.jpg' | relative_url }}" 
+      alt="Future of REITs" 
+      style="width: 100%; height: 100%; object-fit: cover;"
+      loading="eager"
+    />
   </div>
   <div class="hero-text">
     <h1>PhD Research Portfolio</h1>
@@ -41,8 +48,14 @@ share: true
 
 <!-- About Section with 3D Paths -->
 <section id="about" class="about-section">
-  <div class="about-3d" style="height: 350px; margin: 30px 0;">
-    <spline-viewer url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode"></spline-viewer>
+  <div style="position: relative; width: 100%; height: 350px; margin: 30px 0;">
+    <spline-viewer 
+      id="spline-about" 
+      url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode" 
+      loading="lazy" 
+      style="width:100%; height:100%;">
+    </spline-viewer>
+    <div id="preloader-about" class="spline-preloader">Loading DNA Helix...</div>
   </div>
   <div class="about-content">
     <h2>Current Research Focus</h2>
@@ -59,36 +72,66 @@ share: true
   <h2>Key Research Areas</h2>
   <div class="projects-grid">
     <div class="project-card">
-      <div class="icon-container" style="height: 300px;">
-        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+      <div style="position: relative; height: 300px;">
+        <spline-viewer 
+          id="spline-reit" 
+          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
+          loading="lazy" 
+          style="width:100%; height:100%;">
+        </spline-viewer>
+        <div id="preloader-reit" class="spline-preloader">Loading Data...</div>
       </div>
       <h3>REIT Performance Analysis</h3>
       <p>Comparative studies with international markets</p>
     </div>
     <div class="project-card">
-      <div class="icon-container" style="height: 300px;">
-        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+      <div style="position: relative; height: 300px;">
+        <spline-viewer 
+          id="spline-invit" 
+          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
+          loading="lazy" 
+          style="width:100%; height:100%;">
+        </spline-viewer>
+        <div id="preloader-invit" class="spline-preloader">Loading Infra...</div>
       </div>
       <h3>InvIT Market Development</h3>
       <p>Emerging trends in infrastructure investment</p>
     </div>
     <div class="project-card">
-      <div class="icon-container" style="height: 300px;">
-        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+      <div style="position: relative; height: 300px;">
+        <spline-viewer 
+          id="spline-regional" 
+          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
+          loading="lazy" 
+          style="width:100%; height:100%;">
+        </spline-viewer>
+        <div id="preloader-regional" class="spline-preloader">Loading Maps...</div>
       </div>
       <h3>Regional Real Estate Dynamics</h3>
       <p>Bengaluru market characteristics and opportunities</p>
     </div>
     <div class="project-card">
-      <div class="icon-container" style="height: 300px;">
-        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+      <div style="position: relative; height: 300px;">
+        <spline-viewer 
+          id="spline-investor" 
+          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
+          loading="lazy" 
+          style="width:100%; height:100%;">
+        </spline-viewer>
+        <div id="preloader-investor" class="spline-preloader">Loading Neural...</div>
       </div>
       <h3>Investor Behavior</h3>
       <p>Decision-making patterns in Indian REIT/InvIT investments</p>
     </div>
     <div class="project-card">
-      <div class="icon-container" style="height: 300px;">
-        <spline-viewer url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+      <div style="position: relative; height: 300px;">
+        <spline-viewer 
+          id="spline-regulatory" 
+          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
+          loading="lazy" 
+          style="width:100%; height:100%;">
+        </spline-viewer>
+        <div id="preloader-regulatory" class="spline-preloader">Loading Regulations...</div>
       </div>
       <h3>Regulatory Impact</h3>
       <p>Policy framework effects on market development</p>
@@ -107,8 +150,14 @@ share: true
 <!-- Timeline/Milestones Section -->
 <section id="milestones" class="milestones-section">
   <h2>Research Milestones</h2>
-  <div class="timeline-3d" style="height: 400px; width: 100%; margin: 40px 0;">
-    <spline-viewer url="https://prod.spline.design/clonercubesimple-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+  <div style="position: relative; height: 400px; width: 100%; margin: 40px 0;">
+    <spline-viewer 
+      id="spline-milestones" 
+      url="https://prod.spline.design/clonercubesimple-XXXXXXXXXXXX/scene.splinecode" 
+      loading="lazy" 
+      style="width:100%; height:100%;">
+    </spline-viewer>
+    <div id="preloader-milestones" class="spline-preloader">Loading Ticker...</div>
   </div>
   <div class="recent-updates">
     <h3>Recent Updates</h3>
@@ -121,8 +170,14 @@ share: true
 <!-- Interactive Skills Section -->
 <section id="skills" class="skills-section">
   <h2>Research & Technical Skills</h2>
-  <div class="skills-3d" style="height: 450px; width: 100%;">
-    <spline-viewer url="https://prod.spline.design/hands3dui-XXXXXXXXXXXX/scene.splinecode"></spline-viewer>
+  <div style="position: relative; height: 450px; width: 100%;">
+    <spline-viewer 
+      id="spline-skills" 
+      url="https://prod.spline.design/hands3dui-XXXXXXXXXXXX/scene.splinecode" 
+      loading="lazy" 
+      style="width:100%; height:100%;">
+    </spline-viewer>
+    <div id="preloader-skills" class="spline-preloader">Loading Skills...</div>
   </div>
   <div class="skills-list">
     <div class="skill">REITs Analysis</div>
@@ -226,3 +281,31 @@ share: true
 ---
 
 *"Bridging the gap between academic research and practical real estate investment insights in the Indian market."*
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('spline-viewer').forEach((viewer, index) => {
+    const id = viewer.id || `spline-${index}`;
+    // Extract section name if ID format is spline-{section}
+    const section = id.split('-')[1]; 
+    const preloaderId = `preloader-${section}`;
+    const preloader = document.getElementById(preloaderId);
+    
+    viewer.addEventListener('load', () => {
+      viewer.style.visibility = 'visible';
+      viewer.style.opacity = '1';
+      if (preloader) preloader.style.display = 'none';
+      console.log(`Spline loaded: ${id}`);
+    });
+    
+    // 10s fallback
+    setTimeout(() => {
+      if (viewer.style.visibility !== 'visible') {
+        if (preloader) preloader.remove();
+        viewer.style.visibility = 'visible';
+        console.warn(`Spline load fallback: ${id}`);
+      }
+    }, 10000);
+  });
+});
+</script>
