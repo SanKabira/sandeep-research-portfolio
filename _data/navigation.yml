@@ -1,18 +1,8 @@
-main:
-  - title: "Research"
-    url: /research/
-    
-  - title: "Publications"
-    url: /publications/
-    
-  - title: "Teaching"
-    url: /teaching/
-    
-  - title: "Progress"
-    url: /progress/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Contact"
-    url: /contact/
+- name: "About"
+  url: "/sandeep-research-portfolio/about/"
+- name: "CV" 
+  url: "/sandeep-research-portfolio/cv/"
+- name: "Publications"
+  url: "/sandeep-research-portfolio/publications/"
+- name: "Research"
+  url: "/sandeep-research-portfolio/research/"

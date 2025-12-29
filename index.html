@@ -1,38 +1,138 @@
+---
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Inherit Jekyll head -->
-    {% include head.html %}
+    {% include head.html minimal=true %}
+    <style>
+        /* CRITICAL CSS INLINE (8kb) */
+        :root {
+            --netflix-bg: #141414;
+            --card-bg: rgba(31, 31, 31, 0.9);
+            --accent-red: #e50914;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --gold: #f6ad55
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--netflix-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden
+        }
+
+        .netflix-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--netflix-bg) 0%, #000 100%);
+            position: relative
+        }
+
+        .hero-title {
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5)
+        }
+
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 3rem auto
+        }
+
+        .profile-card {
+            aspect-ratio: 1;
+            background: var(--card-bg);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: pointer
+        }
+
+        .profile-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            border-color: var(--accent-red)
+        }
+
+        .profile-card .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem
+        }
+
+        .skip-btn {
+            display: inline-block;
+            margin-top: 3rem;
+            padding: 1rem 2rem;
+            background: transparent;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border: 1px solid var(--text-secondary);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500
+        }
+
+        .skip-btn:hover {
+            color: var(--text-primary);
+            border-color: var(--text-primary)
+        }
+
+        @media(max-width:768px) {
+            .profiles-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Netflix-style landing -->
-    <div class="netflix-landing">
-        <div class="container">
-            <h1 class="title">Who's watching?</h1>
+    <div class="netflix-hero">
+        <div>
+            <h1 class="hero-title">Who's watching?</h1>
             <div class="profiles-grid">
-                <!-- 4 Profile Cards -->
-                <a href="{{ '/cv/' | relative_url }}" class="profile-card recruiter" aria-label="For Recruiters">
-                    <div class="icon">💼</div>
-                    <span>Recruiter</span>
+                <a href="/sandeep-research-portfolio/cv/" class="profile-card recruiter" aria-label="Recruiter View">
+                    <div class="icon">💼</div><span>Recruiter</span>
                 </a>
-                <a href="{{ '/publications/' | relative_url }}" class="profile-card researcher"
-                    aria-label="For Researchers">
-                    <div class="icon">🎓</div>
-                    <span>Fellow Researcher</span>
+                <a href="/sandeep-research-portfolio/publications/" class="profile-card researcher"
+                    aria-label="Research View">
+                    <div class="icon">🎓</div><span>Researcher</span>
                 </a>
-                <a href="{{ '/research/' | relative_url }}" class="profile-card collaborator"
-                    aria-label="For Collaborators">
-                    <div class="icon">🤝</div>
-                    <span>Collaborator</span>
+                <a href="/sandeep-research-portfolio/research/" class="profile-card collaborator"
+                    aria-label="Projects View">
+                    <div class="icon">🤝</div><span>Collaborator</span>
                 </a>
-                <a href="{{ '/about/' | relative_url }}" class="profile-card guest" aria-label="Explore Portfolio">
-                    <div class="icon">👤</div>
-                    <span>Guest Explorer</span>
+                <a href="/sandeep-research-portfolio/about/" class="profile-card explorer" aria-label="Full Portfolio">
+                    <div class="icon">🔬</div><span>Explorer</span>
                 </a>
             </div>
-            <a href="{{ '/about/' | relative_url }}" class="skip-btn">Skip & Explore →</a>
+            <a href="/sandeep-research-portfolio/about/" class="skip-btn">Skip & Explore Portfolio →</a>
         </div>
     </div>
 </body>

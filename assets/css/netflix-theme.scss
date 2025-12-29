@@ -1,0 +1,25 @@
+// FULL NETFLIX SYSTEM (skills, projects, gallery)
+$gold: #f6ad55;
+$accent-red: #e50914;
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, $gold, $accent-red);
+    border-radius: 4px;
+    transition: width 2s ease;
+}
