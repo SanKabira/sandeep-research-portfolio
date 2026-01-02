@@ -1,0 +1,37 @@
+<!-- 3D Interactive Navigation Menu Include for Jekyll -->
+<!-- Include this in your layout or page with: {% include 3d-navigation.html %} -->
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/3d-components/css/3d-navigation.css">
+
+<div class="nav-3d-wrapper">
+  <!-- Container for Three.js canvas -->
+  <div id="nav-3d-container"></div>
+  
+  <!-- Loading indicator -->
+  <div class="nav-3d-loading" id="nav-3d-loading">
+    Initializing 3D Navigation...
+  </div>
+  
+  <!-- Info text -->
+  <p class="nav-3d-info">
+    <em>Interactive 3D Navigation • Hover and click to explore • Desktop optimized</em>
+  </p>
+</div>
+
+<!-- Load Three.js library (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Load custom 3D navigation script -->
+<script src="{{ site.baseurl }}/assets/3d-components/js/3d-navigation.js"></script>
+
+<script>
+  // Hide loading indicator once loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    const loader = document.getElementById('nav-3d-loading');
+    if (loader) {
+      setTimeout(function() {
+        loader.style.display = 'none';
+      }, 1000);
+    }
+  });
+</script>
