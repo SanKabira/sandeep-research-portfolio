@@ -157,6 +157,21 @@
             line-height: 1.2;
         }
 
+        /* New Clock Section Styles */
+        .hero-clock {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 480px;
+        }
+
+        .hero-clock-video video {
+            width: 120px;
+            height: auto;
+            border-radius: 20px;
+            opacity: 0.9;
+        }
+
         .huly-hero p {
             font-size: 1.1rem;
             line-height: 1.6;
@@ -217,11 +232,18 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
 
     <section class="huly-hero">
-        <div class="huly-hero-content">
-            <h1>Sandeep S — Research Portfolio</h1>
-            <p>REITs, InvITs & Algorithmic Finance Research.</p>
-            <a href="#portfolio" class="huly-btn-primary">View Portfolio</a>
-        </div>
+        <section class="hero-clock">
+            <div class="hero-clock-content">
+                <h1>Sandeep S — Research Portfolio</h1>
+                <p>REITs, InvITs & Algorithmic Finance Research.</p>
+                <a href="#portfolio" class="huly-btn-primary">View Portfolio</a>
+            </div>
+
+            <div class="hero-clock-video">
+                <video src="https://huly.io/videos/cta/clock.mp4?updated=20240531154316" autoplay muted loop
+                    playsinline></video>
+            </div>
+        </section>
 
         <div class="huly-hero-3d">
             <spline-viewer url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode" loading="lazy">
