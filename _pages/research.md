@@ -5,6 +5,102 @@ permalink: /research/
 author_profile: true
 ---
 
+
+<!-- Interactive Research Dashboard -->
+<div id="research-dash-wrapper">
+  <div class="dashboard-header">
+    <h2>Interactive Market Analytics</h2>
+    <p>Explore real-time data visualizations of the Indian REIT/InvIT market.</p>
+  </div>
+  
+  <div class="dashboard-controls">
+    <button class="dashboard-btn active" data-view="performance">Performance</button>
+    <button class="dashboard-btn" data-view="map">Regional Map</button>
+    <button class="dashboard-btn" data-view="investor">Investor Network</button>
+  </div>
+
+  <div id="research-dashboard-canvas"></div>
+</div>
+
+<style>
+#research-dash-wrapper {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+}
+.dashboard-header { margin-bottom: 1rem; text-align: center; }
+.dashboard-header h2 { margin-bottom: 0.5rem; color: #2d3748; }
+.dashboard-header p { color: #718096; font-size: 0.9rem; }
+
+.dashboard-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbd5e0;
+  background: #f7fafc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: #4a5568;
+}
+
+.dashboard-btn:hover { background: #edf2f7; }
+.dashboard-btn.active {
+  background: #3182ce;
+  color: white;
+  border-color: #3182ce;
+}
+
+#research-dashboard-canvas {
+  width: 100%;
+  height: 500px;
+  background: #fcfcfc;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: pre-line;
+  z-index: 10;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  #research-dash-wrapper {
+    background: #1a202c;
+    border-color: #2d3748;
+  }
+  .dashboard-header h2 { color: #f7fafc; }
+  .dashboard-btn {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  .dashboard-btn:hover { background: #4a5568; }
+  .dashboard-btn.active { background: #3182ce; }
+  #research-dashboard-canvas { background: #171923; }
+}
+</style>
+
 ## Current Research Focus
 
 My PhD research investigates the **Real Estate Investment Trusts (REITs) and Infrastructure Investment Trusts (InvITs)** market in India, with particular emphasis on the **Bengaluru metropolitan region**.

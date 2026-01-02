@@ -5,29 +5,36 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js" {% if site.site_theme=="dark" %} data-theme="dark" {% endif
+  %}>
 
-  <body>
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+<body>
 
-    <main class="main-content" role="main">
-      {{ content }}
-    </main>
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+  {% if page.include_3d_nav %}
+  {% include 3d-navigation.html %}
+  {% endif %}
 
-    {% include scripts.html %}
+  <main class="main-content" role="main">
+    {{ content }}
+  </main>
 
-  </body>
+  <div class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include footer.html %}
+    </footer>
+  </div>
+
+  {% include scripts.html %}
+
+</body>
+
 </html>

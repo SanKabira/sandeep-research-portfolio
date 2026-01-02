@@ -4,6 +4,7 @@ title: "About Me"
 permalink: /about/
 author_profile: true
 share: true
+include_3d_nav: true
 ---
 
 <!-- Spline Viewer Setup -->
@@ -48,15 +49,11 @@ share: true
 
 <!-- About Section with 3D Paths -->
 <section id="about" class="about-section">
-  <div style="position: relative; width: 100%; height: 350px; margin: 30px 0;">
-    <spline-viewer 
-      id="spline-about" 
-      url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode" 
-      loading="lazy" 
-      style="width:100%; height:100%;">
-    </spline-viewer>
-    <div id="preloader-about" class="spline-preloader">Loading DNA Helix...</div>
-  </div>
+  {% include components/spline-scene.html 
+     id="about-main" 
+     url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode" 
+     caption="Loading DNA Helix..." 
+     height="400px" %}
   <div class="about-content">
     <h2>Current Research Focus</h2>
     <p>My doctoral research investigates the performance characteristics, market dynamics, and investment potential of REITs and InvITs in India, with particular emphasis on the <strong>Bengaluru metropolitan region</strong>. This research aims to contribute to the understanding of these emerging asset classes in the Indian context and provide insights for investors, policymakers, and market participants.</p>
@@ -67,83 +64,59 @@ share: true
 **Primary Supervisor**: Dr. Aparna Pavani. S  
 *Associate Professor, Alliance School of Business*
 
-<!-- Projects Grid with 3D Icons -->
-<section id="projects" class="projects-section">
-  <h2>Key Research Areas</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <div style="position: relative; height: 300px;">
-        <spline-viewer 
-          id="spline-reit" 
-          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
-          loading="lazy" 
-          style="width:100%; height:100%;">
-        </spline-viewer>
-        <div id="preloader-reit" class="spline-preloader">Loading Data...</div>
-      </div>
-      <h3>REIT Performance Analysis</h3>
-      <p>Comparative studies with international markets</p>
+<!-- Interactive Research Visualizations -->
+<div class="research-viz-section">
+    
+    <!-- 1. REIT Visualization -->
+    <div class="viz-block">
+        <div class="viz-text">
+            <h3>REIT Performance Analysis</h3>
+            <p>Evaluating the growth trajectory of Indian REITs relative to global benchmarks. Click on the 3D structures to see key performance metrics.</p>
+        </div>
+        <div class="research-viz-container" data-viz-type="reit-structure" style="height: 350px; width: 100%; border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.02);"></div>
     </div>
-    <div class="project-card">
-      <div style="position: relative; height: 300px;">
-        <spline-viewer 
-          id="spline-invit" 
-          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
-          loading="lazy" 
-          style="width:100%; height:100%;">
-        </spline-viewer>
-        <div id="preloader-invit" class="spline-preloader">Loading Infra...</div>
-      </div>
-      <h3>InvIT Market Development</h3>
-      <p>Emerging trends in infrastructure investment</p>
-    </div>
-    <div class="project-card">
-      <div style="position: relative; height: 300px;">
-        <spline-viewer 
-          id="spline-regional" 
-          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
-          loading="lazy" 
-          style="width:100%; height:100%;">
-        </spline-viewer>
-        <div id="preloader-regional" class="spline-preloader">Loading Maps...</div>
-      </div>
-      <h3>Regional Real Estate Dynamics</h3>
-      <p>Bengaluru market characteristics and opportunities</p>
-    </div>
-    <div class="project-card">
-      <div style="position: relative; height: 300px;">
-        <spline-viewer 
-          id="spline-investor" 
-          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
-          loading="lazy" 
-          style="width:100%; height:100%;">
-        </spline-viewer>
-        <div id="preloader-investor" class="spline-preloader">Loading Neural...</div>
-      </div>
-      <h3>Investor Behavior</h3>
-      <p>Decision-making patterns in Indian REIT/InvIT investments</p>
-    </div>
-    <div class="project-card">
-      <div style="position: relative; height: 300px;">
-        <spline-viewer 
-          id="spline-regulatory" 
-          url="https://prod.spline.design/purple3dicons-XXXXXXXXXXXX/scene.splinecode" 
-          loading="lazy" 
-          style="width:100%; height:100%;">
-        </spline-viewer>
-        <div id="preloader-regulatory" class="spline-preloader">Loading Regulations...</div>
-      </div>
-      <h3>Regulatory Impact</h3>
-      <p>Policy framework effects on market development</p>
-    </div>
-  </div>
-</section>
 
-### Academic Contributions
-- **Publications**: Research papers in peer-reviewed journals (in progress)
-- **Conference Presentations**: National and international real estate conferences
-- **Teaching**: Graduate courses in finance and real estate investment
-- **Industry Engagement**: Collaboration with real estate companies and investment firms
+    <!-- 2. InvIT Components -->
+    <div class="viz-block">
+        <div class="research-viz-container" data-viz-type="invit-components" style="height: 350px; width: 100%; border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.02);"></div>
+        <div class="viz-text">
+            <h3>InvIT Market Development</h3>
+            <p>Analyzing the infrastructure components driving InvIT adoption. Interact with the nodes to explore sector-specific data.</p>
+        </div>
+    </div>
+
+    <!-- 3. Bengaluru Focus -->
+    <div class="viz-block">
+        <div class="viz-text">
+            <h3>Bengaluru Regional Dynamics</h3>
+            <p>A deep dive into the micro-markets of Bengaluru. The heatmap reflects commercial absorption rates.</p>
+        </div>
+        <div class="research-viz-container" data-viz-type="bengaluru-map" style="height: 350px; width: 100%; border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.02);"></div>
+    </div>
+
+</div>
+
+<style>
+.research-viz-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 3rem 0;
+}
+.viz-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.viz-text h3 { margin-top: 0; color: #2c5282; }
+@media(max-width: 768px) {
+    .viz-block { grid-template-columns: 1fr; }
+    .viz-block > div:first-child { order: 2; } /* Image on top usually better, but alternating is fine */
+}
+</style>
+
+{% include components/research-schema.html %}
 
 ---
 
@@ -153,7 +126,7 @@ share: true
   <div style="position: relative; height: 400px; width: 100%; margin: 40px 0;">
     <spline-viewer 
       id="spline-milestones" 
-      url="https://prod.spline.design/clonercubesimple-XXXXXXXXXXXX/scene.splinecode" 
+      url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode" 
       loading="lazy" 
       style="width:100%; height:100%;">
     </spline-viewer>
@@ -173,7 +146,7 @@ share: true
   <div style="position: relative; height: 450px; width: 100%;">
     <spline-viewer 
       id="spline-skills" 
-      url="https://prod.spline.design/hands3dui-XXXXXXXXXXXX/scene.splinecode" 
+      url="https://prod.spline.design/4uHFJsL4LM0yUs72/scene.splinecode" 
       loading="lazy" 
       style="width:100%; height:100%;">
     </spline-viewer>

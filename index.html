@@ -109,6 +109,28 @@
                 gap: 1.5rem
             }
         }
+
+        .profile-3d-stage {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            /* Behind text */
+            pointer-events: none;
+            /* Allow clicks on parent anchor */
+        }
+
+        .profile-card span {
+            position: relative;
+            z-index: 1;
+            /* On top of canvas */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            /* Legibility */
+            margin-top: 80px;
+            /* Push text down below the main icon area */
+        }
     </style>
 </head>
 
@@ -117,24 +139,28 @@
         <div>
             <h1 class="hero-title">Who's watching?</h1>
             <div class="profiles-grid">
-                <a href="/sandeep-research-portfolio/cv/" class="profile-card recruiter" aria-label="Recruiter View">
-                    <div class="icon">💼</div><span>Recruiter</span>
+                <a href="/sandeep-research-portfolio/cv/" class="profile-card" data-type="recruiter">
+                    <div class="profile-3d-stage" data-type="recruiter"></div>
+                    <span>Recruiter</span>
                 </a>
-                <a href="/sandeep-research-portfolio/publications/" class="profile-card researcher"
-                    aria-label="Research View">
-                    <div class="icon">🎓</div><span>Researcher</span>
+                <a href="/sandeep-research-portfolio/publications/" class="profile-card" data-type="researcher">
+                    <div class="profile-3d-stage" data-type="researcher"></div>
+                    <span>Researcher</span>
                 </a>
-                <a href="/sandeep-research-portfolio/research/" class="profile-card collaborator"
-                    aria-label="Projects View">
-                    <div class="icon">🤝</div><span>Collaborator</span>
+                <a href="/sandeep-research-portfolio/research/" class="profile-card" data-type="collaborator">
+                    <div class="profile-3d-stage" data-type="collaborator"></div>
+                    <span>Collaborator</span>
                 </a>
-                <a href="/sandeep-research-portfolio/about/" class="profile-card explorer" aria-label="Full Portfolio">
-                    <div class="icon">🔬</div><span>Explorer</span>
+                <a href="/sandeep-research-portfolio/about/" class="profile-card" data-type="explorer">
+                    <div class="profile-3d-stage" data-type="explorer"></div>
+                    <span>Explorer</span>
                 </a>
             </div>
             <a href="/sandeep-research-portfolio/about/" class="skip-btn">Skip & Explore Portfolio →</a>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/sandeep-research-portfolio/assets/js/home-3d.js"></script>
 </body>
 
 </html>
