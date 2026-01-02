@@ -1,0 +1,424 @@
+:root {
+    --bg-page: #020617;
+    --bg-elevated: #020617;
+    --gradient-main: linear-gradient(135deg, #1e40af, #0d9488, #6b21a8);
+    --accent-gold: #f59e0b;
+    --text-main: #f8fafc;
+    --text-subtle: #e5e7eb;
+    --text-muted: #9ca3af;
+    --border-soft: rgba(148, 163, 184, 0.35);
+    --card-bg: rgba(15, 23, 42, 0.92);
+    --shadow-soft: 0 24px 50px rgba(15, 23, 42, 0.95);
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-full: 999px;
+    --transition-fast: 180ms ease-out;
+}
+
+/* Reset-ish */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+/* Nyro-style backdrop */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Poppins", sans-serif;
+    color: var(--text-main);
+    background:
+        radial-gradient(circle at top, #020617 0, #020617 35%, #020617 70%, #020617 100%),
+        var(--bg-page);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Center main content like Nyro */
+#main,
+.page,
+.page__inner-wrap,
+.wrapper,
+.site-content {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+/* Typography scale */
+h1,
+.page-title {
+    font-size: clamp(2.4rem, 4vw, 3.1rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--text-main);
+}
+
+h2 {
+    font-size: clamp(1.7rem, 2.6vw, 2.1rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-subtle);
+}
+
+h4,
+h5,
+h6 {
+    color: var(--text-subtle);
+}
+
+p,
+li {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* Links */
+a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: color var(--transition-fast), text-shadow var(--transition-fast);
+}
+
+a:hover {
+    color: #facc15;
+    text-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
+}
+
+/* Top nav from AcademicPages -> Nyro glass bar */
+.masthead,
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    backdrop-filter: blur(18px);
+    background: linear-gradient(to bottom,
+            rgba(15, 23, 42, 0.92),
+            rgba(15, 23, 42, 0.82),
+            rgba(15, 23, 42, 0.0));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.masthead__inner-wrap,
+.site-header .wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0.9rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Site title */
+.site-title,
+.site-title a {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+/* Nav links */
+.site-nav .page-link,
+.masthead__menu-item a {
+    font-size: 0.9rem;
+    color: var(--text-subtle);
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.site-nav .page-link:hover,
+.masthead__menu-item a:hover {
+    background: rgba(15, 23, 42, 0.85);
+    color: var(--text-main);
+    transform: translateY(-1px);
+}
+
+/* About page hero-like wrapper */
+.page-header,
+.page__title,
+#main .page-title {
+    margin-top: 3.5rem;
+}
+
+/* Add Nyro hero panel around first heading+intro */
+.page,
+.page__inner-wrap {
+    margin-top: 2rem;
+}
+
+.page>header,
+.page__inner-wrap>header:first-child {
+    border-radius: var(--radius-xl);
+    padding: 2.6rem 2.4rem 2.3rem;
+    background-image: var(--gradient-main);
+    box-shadow: var(--shadow-soft);
+    color: var(--text-main);
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle glow */
+.page>header::before,
+.page__inner-wrap>header:first-child::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background:
+        radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.06) 0, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(15, 23, 42, 0.4) 0, transparent 60%);
+    opacity: 0.8;
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.page>header *:not(.page-icon),
+.page__inner-wrap>header:first-child * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Subtitle under your name line */
+.page-subtitle {
+    margin-top: 0.6rem;
+    font-size: 1.05rem;
+    color: var(--text-subtle);
+}
+
+/* Footer */
+.page__footer,
+.site-footer {
+    margin-top: 3rem;
+    padding: 1.6rem 1.5rem 2.2rem;
+    border-top: 1px solid rgba(31, 41, 55, 0.9);
+    color: var(--text-muted);
+    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 1));
+}
+
+/* Generic section spacing */
+.page .page__content section,
+.page__content>div,
+.page__content>p {
+    margin-top: 2.3rem;
+}
+
+/* Section titles with gradient underline */
+.page__content h2 {
+    position: relative;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.page__content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 82px;
+    height: 2px;
+    border-radius: 999px;
+    background-image: linear-gradient(90deg, #1e40af, #0d9488);
+    opacity: 0.85;
+}
+
+/* Card container (for REIT Performance, InvIT, Bengaluru etc.) */
+.page__content h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Wrap each h3+paragraph block in a card look via descendant */
+.page__content h3+p,
+.page__content h3+p+p,
+.page__content h3+ul {
+    display: block;
+    border-radius: var(--radius-lg);
+    padding: 1.4rem 1.6rem;
+    margin-top: 0.4rem;
+    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.25), rgba(15, 23, 42, 0.95));
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+}
+
+/* “Current Research Focus”, “Research & Technical Skills”, etc. */
+.page__content h3+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.page__content h3+ul li {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.page__content h3+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0.3rem;
+    top: 0.55rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-image: linear-gradient(135deg, #1e40af, #0d9488);
+}
+
+/* Generic links styled as Nyro action chips */
+.page__content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: var(--radius-full);
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    font-size: 0.88rem;
+    color: var(--text-subtle);
+    margin: 0.25rem 0.3rem 0.25rem 0;
+    white-space: nowrap;
+}
+
+.page__content a:hover {
+    background: rgba(15, 23, 42, 0.95);
+    border-color: rgba(248, 250, 252, 0.48);
+    color: var(--text-main);
+    transform: translateY(-1px);
+}
+
+/* Publications cards */
+.page__content h4 {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-subtle);
+}
+
+.page__content h4+p {
+    border-radius: 18px;
+    padding: 1rem 1.25rem;
+    background-image: linear-gradient(135deg, rgba(37, 99, 235, 0.22), rgba(15, 23, 42, 0.98));
+    border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+/* Download PDF buttons */
+.page__content a[href$=".pdf"] {
+    background: linear-gradient(135deg, #1e40af, #0d9488);
+    border-color: transparent;
+    color: var(--text-main);
+    font-weight: 500;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+}
+
+/* Social share buttons row */
+.page__content a[href*="facebook.com"],
+.page__content a[href*="linkedin.com"],
+.page__content a[href*="bsky.app"],
+.page__content a[href*="x.com"] {
+    font-size: 0.86rem;
+    background: rgba(15, 23, 42, 0.9);
+}
+
+@keyframes nyro-pulse {
+    0% {
+        opacity: 0.35;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+
+    100% {
+        opacity: 0.35;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle scroll-in effect for sections */
+@keyframes nyro-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page__content>* {
+    animation: nyro-fade-up 450ms ease-out;
+    animation-fill-mode: both;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"] {
+    border-radius: var(--radius-full);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
+    color: #0b1120;
+    box-shadow: 0 18px 38px rgba(250, 204, 21, 0.4);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-position 200ms ease-out;
+    background-size: 160% 160%;
+    background-position: 0% 50%;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    transform: translateY(-1px);
+    background-position: 100% 50%;
+    box-shadow: 0 22px 50px rgba(250, 204, 21, 0.6);
+}
+
+/* Responsive paddings */
+@media (max-width: 1024px) {
+
+    .page>header,
+    .page__inner-wrap>header:first-child {
+        border-radius: 24px;
+        padding: 2.1rem 1.9rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #main,
+    .page,
+    .page__inner-wrap,
+    .wrapper,
+    .site-content {
+        padding-inline: 1.1rem;
+    }
+
+    .masthead__inner-wrap,
+    .site-header .wrapper {
+        padding-inline: 1.1rem;
+    }
+
+    .page>header,
+    .page__inner-wrap>header:first-child {
+        border-radius: 20px;
+        padding: 1.9rem 1.6rem 1.8rem;
+    }
+}
