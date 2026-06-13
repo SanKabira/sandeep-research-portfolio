@@ -1,47 +1,123 @@
-/* ==========================================================================
-   DEFAULT THEME
-   ========================================================================== */
+/* ==================================================================
+   NOTION DESIGN SYSTEM — Light Theme
+   Based on Notion's warm minimalism design language
+   Colors: #0075de primary, #f6f5f4 warm canvas, #1a1a1a ink
+   ================================================================== */
 
-/* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+/* ----------------------------------------------------------------
+   NOTION COLOR TOKENS
+   ---------------------------------------------------------------- */
 
-/* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+/* Primary / CTA */
+$notion-blue              : #0075de;
+$notion-blue-active       : #005bab;
+$notion-blue-light        : #e8f2fd;
 
-/* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
-$masthead-height            : 70px;
-$navicon-width              : 28px;
-$navicon-height             : 4px;
-$sidebar-link-max-width     : 250px;
-$sidebar-screen-min-width   : 1024px;
+/* Hero / Inverted Section */
+$notion-indigo            : #213183;
 
-/* Default light theme for the site */
+/* Surfaces */
+$notion-canvas            : #ffffff;
+$notion-canvas-soft       : #f6f5f4;
+$notion-hairline          : #e6e6e6;
+
+/* Text Hierarchy */
+$notion-ink               : #1a1a1a;
+$notion-charcoal          : #31302e;
+$notion-stone             : #615d59;
+$notion-ash               : #a39e98;
+
+/* Gray scale (kept for compatibility) */
+$gray                     : #a39e98;
+$dark-gray                : #615d59;
+$darker-gray              : #31302e;
+$light-gray               : #e6e6e6;
+$lighter-gray             : #f6f5f4;
+
+/* Status Colors */
+$danger-color             : #e03e3e;
+$info-color               : #0075de;
+$notice-color             : $notion-stone;
+$success-color            : #0f7b6c;
+$warning-color            : #d9730d;
+
+/* ----------------------------------------------------------------
+   SPACING — 8px base unit (Notion standard)
+   ---------------------------------------------------------------- */
+$space-xxs  : 4px;
+$space-xs   : 8px;
+$space-sm   : 12px;
+$space-md   : 16px;
+$space-lg   : 24px;
+$space-xl   : 28px;
+$space-xxl  : 32px;
+
+/* ----------------------------------------------------------------
+   LAYOUT
+   ---------------------------------------------------------------- */
+$border-radius            : 8px;    /* rounded.md — utility/nav buttons */
+$border-radius-pill       : 9999px; /* rounded.full — CTA pill buttons */
+$border-radius-card       : 12px;   /* rounded.lg — feature cards */
+$border-radius-input      : 4px;    /* rounded.xs — square-ish inputs */
+
+$box-shadow               : 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+$box-shadow-card          : 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+$global-transition        : all 0.2s ease-in-out;
+
+$masthead-height          : 64px;   /* Notion sticky nav height */
+$navicon-width            : 28px;
+$navicon-height           : 4px;
+$sidebar-link-max-width   : 250px;
+$sidebar-screen-min-width : 1024px;
+
+/* ----------------------------------------------------------------
+   CSS CUSTOM PROPERTIES — Notion Light Theme
+   ---------------------------------------------------------------- */
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
-    --global-border-color               : #{$lighter-gray};
-    --global-dark-border-color          : #bdc1c4;
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
-    --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
-    --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$lighter-gray};
+  /* Base Colors */
+  --global-base-color               : #{$notion-ink};
+  --global-bg-color                 : #{$notion-canvas};
+  --global-footer-bg-color          : #{$notion-canvas-soft};
+  --global-code-background-color    : #{$notion-canvas-soft};
+  --global-border-color             : #{$notion-hairline};
+  --global-dark-border-color        : #{$notion-hairline};
+
+  /* Text */
+  --global-text-color               : #{$notion-charcoal};
+  --global-text-color-light         : #{$notion-stone};
+  --global-fig-caption-color        : #{$notion-ash};
+
+  /* Links — Notion Blue */
+  --global-link-color               : #{$notion-blue};
+  --global-link-color-hover         : #{$notion-blue-active};
+  --global-link-color-visited       : #{$notion-blue-active};
+
+  /* Masthead / Nav */
+  --global-masthead-link-color      : #{$notion-charcoal};
+  --global-masthead-link-color-hover: #{$notion-blue};
+  --global-masthead-bg-color        : #{$notion-canvas};
+  --global-masthead-border          : #{$notion-hairline};
+
+  /* Buttons */
+  --global-btn-bg-color             : #{$notion-blue};
+  --global-btn-color                : #ffffff;
+  --global-btn-bg-hover             : #{$notion-blue-active};
+
+  /* Hero / Inverted band */
+  --global-hero-bg                  : #{$notion-indigo};
+  --global-hero-color               : #ffffff;
+
+  /* Cards */
+  --global-card-bg                  : #{$notion-canvas};
+  --global-card-border              : #{$notion-hairline};
+  --global-card-shadow              : #{$box-shadow-card};
+
+  /* Notion accent palette for tags/badges */
+  --notion-sky                      : #e3f2fd;
+  --notion-purple                   : #f3e8ff;
+  --notion-pink                     : #fce4ec;
+  --notion-orange                   : #fff3e0;
+  --notion-teal                     : #e0f7fa;
+  --notion-green                    : #e8f5e9;
+  --notion-brown                    : #efebe9;
 }
